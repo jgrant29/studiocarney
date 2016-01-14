@@ -1,0 +1,36 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "welcome";
+
+body { padding-top: 70px; }
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #000;
+}
+
+.front-title {
+  font-size: 32px;
+  font-weight: 200;
+  color: #777;
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .front-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .front-title {
+    font-size: 14px;
+  }
+
+  .glyphicon-home,
+  .glyphicon-tent,
+  .glyphicon-signal,
+  .glyphicon-scale {
+   font-size: 2rem;
+  } 
+}

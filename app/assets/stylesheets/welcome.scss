@@ -1,0 +1,94 @@
+.hero-content {
+  position: relative;
+  min-height: 400px;
+  background-image: image-url("michael.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.hero-studio {
+  position: relative;
+  min-height: 400px;
+  background-image: image-url("studio2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.hero-content .hero-title {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-shadow: 1px 1px 0px rgb(58,23,63);
+}
+
+.hero-studio .hero-title {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-shadow: 1px 1px 0px rgb(58,23,63);
+}
+
+.front-mid {
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+.col-md-4 .point-title {
+  font-size: 3.25rem;
+  color: #777;
+}
+
+.point .point-description {
+  color: #777;
+}
+.carousel {
+  height: 600px;
+}
+
+@media (max-width: 30rem) {
+  .carousel {
+  height:250px;
+  }
+}
+
+@media (max-width: 40rem) {
+  .carousel-control{
+    height: 50px;
+  }
+}
+
+.carousel-font {
+  color: #fff;
+}
+
+
+@media (max-width: 420px) {
+  .front-title {
+    font-size: 14px;
+  }
+
+  .col-md-4 .point-title {
+  font-size: 2.25rem;
+  }
+}
