@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Studiocarney</title>
+  <title>Studio Carney</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+      <div class="container-fluid">
+
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -23,7 +23,7 @@
       </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse fixed" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="/welcome/about">ABOUT <span class="sr-only">(current)</span></a></li>
           <li><a href="#">BOARD MEMBERS</a></li>
@@ -39,8 +39,24 @@
   </nav>
 
 
-<%= yield %>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active picture">
+      <%= image_tag("stoplight.jpg") %> 
+    </div>
+    <div class="item picture">
+      <%= image_tag("ceilinglight.jpg", class: "img_preview") %> 
+    </div>
+    <div class="item picture">
+      <%= image_tag("studio2.jpg") %>
+    </div> 
+  </div>
+
+</div>
 </div>
 
+<%= yield %>
 </body>
 </html>

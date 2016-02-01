@@ -1,90 +1,67 @@
-.hero-content {
-  position: relative;
-  min-height: 400px;
-  background-image: image-url("michael.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-}
-
-.hero-studio {
-  position: relative;
-  min-height: 400px;
-  background-image: image-url("studio2.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-}
-
-.hero-content .hero-title {
+.hero-about {
+  font-family: 'P22FLLWTerracottaExtras';
   position: absolute;
-  top: 40%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: center;
-  font-size: 4rem;
+  top: 20%;
+  font-size: 7rem;
   color: #fff;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  text-shadow: 1px 1px 0px rgb(58,23,63);
+  text-shadow: 2px 1px 0px #000;
 }
 
-.hero-studio .hero-title {
+.hero-about-2 {
+  font-family: 'P22FLLWTerracottaExtras';
   position: absolute;
-  top: 40%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: center;
-  font-size: 4rem;
+  top: 70%;
+  font-size: 7rem;
   color: #fff;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  text-shadow: 1px 1px 0px rgb(58,23,63);
+  text-shadow: 2px 1px 0px #000;
 }
 
 .front-mid {
   padding-top: 3rem;
   margin-bottom: 3rem;
+  position: absolute;
+  top: 60%;
 }
 .col-md-4 .point-title {
   font-size: 3.25rem;
-  color: #777;
-}
-
-.point .point-description {
-  color: #777;
-}
-.carousel {
-  height: 600px;
-}
-
-@media (max-width: 30rem) {
-  .carousel {
-  height:250px;
-  }
-}
-
-@media (max-width: 40rem) {
-  .carousel-control{
-    height: 50px;
-  }
-}
-
-.carousel-font {
   color: #fff;
+}
+
+.point-description {
+  color: #fff;
+}
+
+.about-mid {
+  margin-right: 8rem;
+  position: absolute;
+  top: 30%;
+}
+
+.about-description {
+  color: #fff;
+}
+
+.about-mid-2 {
+  margin-right: 8rem;
+  position: absolute;
+  top: 80%;
+}
+
+.carousel {
+  position: fixed; 
+  height: 100%;
 }
 
 
 @media (max-width: 420px) {
   .front-title {
+    top: 5%;
     font-size: 14px;
   }
 
