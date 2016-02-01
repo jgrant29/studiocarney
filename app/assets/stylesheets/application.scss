@@ -47,6 +47,19 @@ body, html {
  #carousel-example-generic {
    height: 100%;
  }
+ 
+ .carousel-inner  {
+   height: 100%;
+ }
+ 
+ .carousel-inner > .item {
+   height:100%;
+ }
+         .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+             min-width: 100%;
+             height: 100%;
+             object-fit: cover;
+          }
 
 .front-title {
   position: absolute;
