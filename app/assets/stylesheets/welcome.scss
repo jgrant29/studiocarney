@@ -252,33 +252,16 @@
   }
 }
 
-@media (max-width: 465px) {
 
-  .front-title {
-    font-size: 6rem;
-  }
 
-  .architecture-border {
-    letter-spacing: 23px;
-    margin-top: -20px;
-    font-size: 2rem;
-  }
-
-  .translating-front-text {
-    font-size: 1.75rem; 
-    letter-spacing: 3px;
-  }
-
-}
-
-@media (max-width: 465px) {
+@media (max-width: 480px) {
 
   .front-title {
     font-size: 5rem;
   }
 
   .architecture-border {
-    letter-spacing: 23px;
+    letter-spacing: 15px;
     margin-top: -16px;
     font-size: 1.75rem;
   }
