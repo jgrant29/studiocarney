@@ -44,6 +44,12 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active picture">
+      <%= image_tag("Florence.jpg") %> 
+    </div>
+    <div class="item active picture">
+      <%= image_tag("bridge.jpg") %> 
+    </div>
+    <div class="item active picture">
       <%= image_tag("stoplight.jpg") %> 
     </div>
     <div class="item picture">
@@ -52,11 +58,25 @@
     <div class="item picture">
       <%= image_tag("studio2.jpg") %>
     </div> 
+    <div class="item active picture">
+      <%= image_tag("building-4.jpg") %> 
+    </div>
+    <div class="item active picture">
+      <%= image_tag("roma-1.jpg") %> 
+    </div>
+    <div class="item active picture">
+      <%= image_tag("town-2.jpg") %> 
+    </div>
+    <div class="item active picture">
+      <%= image_tag("tallbuildilng.jpg") %> 
+    </div>
   </div>
 
 </div>
 </div>
 
 <%= yield %>
+<%= render partial: 'welcome/footer' %>
+
 </body>
 </html>

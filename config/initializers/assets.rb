@@ -16,3 +16,11 @@ Rails.application.config.assets.precompile += %w( studio2.jpg )
 Rails.application.config.assets.precompile += %w( michael.jpg )
 Rails.application.config.assets.precompile += %w( colosium.jpg )
 Rails.application.config.assets.precompile += %w( house.jpg )
+Rails.application.config.assets.precompile += %w( house.jpg )
+Rails.application.config.assets.precompile += %w( tallbuildilng.jpg )
+Rails.application.config.assets.precompile += %w( town-2.jpg )
+Rails.application.config.assets.precompile += %w( building-4.jpg )
+Rails.application.config.assets.precompile += %w( bridge.jpg )
+Rails.application.config.assets.precompile += %w( Florence.jpg )
+
+   
