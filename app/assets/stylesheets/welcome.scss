@@ -97,7 +97,7 @@
 .about-body {
   color: #fff;
   font-size: 3rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .about-body-michael {
@@ -197,25 +197,28 @@
 .hire-me-text {
   margin-top: 70px;
   padding-top: 3px;
-  background-color: rgba(153, 0, 0, 1);
+  background-color: rgba(255, 255, 255, .9);
   width: 33%;
   height: 5rem;
   margin-left: 33%;
   font-size: 3rem;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #000;
+  border: 1px solid #fff;
   vertical-align: center;
   letter-spacing: 10px;
   border-radius: 5px;
 
   &:hover {
-    box-shadow: 3px 3px 5px #000 inset;
-    color: #fff;
-    text-decoration: none;
+    color: #000;
+    text-decoration: underline;
   };
 }
 
 @media (max-width: 991px) {
+
+    .hire-me {
+      padding-top: 50px;
+    } 
   .architecture-border {
     letter-spacing: 45px;
     padding-left: 15px;
@@ -243,12 +246,14 @@
 
 @media (max-width: 770px) {
 
+
   .architecture-border {
     letter-spacing: 40px;
   }
 }
 
 @media (max-width: 695px) {
+
 
   .front-title {
     font-size: 10rem;
@@ -260,12 +265,13 @@
 }
 
 @media (max-width: 645px) {
-    .hire-me-text {
-    width: 55%;
-    height: 5rem;
-    margin-left: 22.5%;
-  }
 
+    .hire-me-text {
+      margin-top: 170px;
+      width: 55%;
+      height: 5rem;
+      margin-left: 22.5%;
+  }
 
   .front-title {
     font-size: 8rem;
