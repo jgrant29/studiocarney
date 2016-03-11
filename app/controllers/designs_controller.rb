@@ -15,17 +15,18 @@ class DesignsController < ApplicationController
   # GET /designs/new
   def new
     @design = Design.new
-    authorize @design
   end
 
   # GET /designs/1/edit
   def edit
-    authorize @design
   end
 
   # POST /designs
   # POST /designs.json
   def create
+        @design = Design.new(design_params)
+
+    authorize @design
     respond_to do |format|
       if @design.save
         format.html { redirect_to @design, notice: 'Design was successfully created.' }
