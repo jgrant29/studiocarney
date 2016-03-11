@@ -9,6 +9,7 @@ gem 'devise'
 gem 'figaro', '1.0'
 gem "font-awesome-rails"
 gem 'mail_form'
+gem 'fog'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
