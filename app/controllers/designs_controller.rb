@@ -26,7 +26,6 @@ class DesignsController < ApplicationController
   # POST /designs
   # POST /designs.json
   def create
-    authorize @design
     respond_to do |format|
       if @design.save
         format.html { redirect_to @design, notice: 'Design was successfully created.' }
