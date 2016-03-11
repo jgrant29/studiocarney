@@ -25,15 +25,21 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse fixed" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="/welcome/about">ABOUT <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">BOARD MEMBERS</a></li>
-          <li><a href="#">REVIEWS</a></li>
-          <li><a href="#">CONTACT</a></li>
-       </ul>
-      
-       <ul class="nav navbar-nav navbar-right">
-          <form class="navbar-form navbar-left" role="search">
+          <li><a href="/welcome/about">About</a></li>
+          <li><a href="/designs">Design</a></li>
+          <li><a href="#">Contact</a></li>
+          <% if current_user %>
+             <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+             <% end %>
         </ul>
+         <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "https://www.facebook.com/StudioCarneyArchitecture/?fref=ts" do %>
+              <%= fa_icon "facebook-square" %>
+            <% end %></li>
+            <li><%= link_to "https://www.linkedin.com/in/michael-carney-ala-148287b?authType=NAME_SEARCH&authToken=F6rJ&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A33521672%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1457651355421%2Ctas%3Amichael%20carney" do %>
+              <%= fa_icon "linkedin-square" %>
+            <% end %></li>
+          </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>

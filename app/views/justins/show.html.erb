@@ -1,0 +1,16 @@
+<% if policy(@design).edit? %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @justin.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @justin.body %>
+</p>
+
+<%= link_to 'Edit', edit_justin_path(@justin) %> |
+<%= link_to 'Back', justins_path %>
+<% end %>

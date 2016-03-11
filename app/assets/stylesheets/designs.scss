@@ -1,0 +1,111 @@
+.body-design {
+  background-color: rgba(0, 0, 0, 1);
+  min-height: 100rem;
+  margin-bottom: -20px;
+}
+
+.body-design-show {
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: -10px;
+}
+
+.design-title {
+  color: #fff;
+}
+
+.design-title-show {
+  color: #fff;
+  border-bottom: 1px solid #A00000;
+}
+
+.design-landing {
+  font-family: "Helvetica, Ariel";
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.thumbnail-modified {
+  border-radius: 25px;
+}
+
+.thumbnail-modified img{
+  border-radius: 25px;
+}
+
+.design-image-index {
+  font-family: 'P22FLLWTerracottaExtra';
+  font-size: 18rem;
+  color: #fff;
+}
+
+.design-image-index a{
+  color: #fff;
+  &:hover {
+    color: #A00000;
+    text-decoration: none;
+  };
+}
+
+.design-frank-text {
+  font-family: 'P22FLLWTerracottaExtra';
+  vertical-align: center;
+}
+
+.design-background {
+  background-image: image_url("Piazza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 280px;
+  border: 5px solid #fff;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.design-background-show {
+  background-image: image_url("bricks.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 280px;
+  border: 5px solid #fff;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.design-build-index {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.read-more {
+  color: #fff;
+  font-size: 2rem;
+  &:hover {
+    color: #A00000;
+    text-decoration: underline;
+  };
+}
+
+.design-box {
+}
+
+hr {
+  border-top: 1px solid #A00000;
+}
+
+.design-description-show p{
+  color: #fff;
+  font-size: 3rem;
+}
+
+.design-description-show h1, h2, h3, h4, h5{
+  color: #fff;
+} 
+
+.design-description-show img {
+  margin: 20px;
+  width: 200px;
+  border-radius: 25px;
+}

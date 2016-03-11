@@ -1,0 +1,8 @@
+<% if policy(@design).edit? %>
+<h1>Editing Designer</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @designer %> |
+<%= link_to 'Back', designers_path %>
+<% end %>

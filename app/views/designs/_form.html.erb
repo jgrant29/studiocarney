@@ -1,0 +1,57 @@
+<div class="container-fluid design-landing">
+    <%= form_for(@design) do |f| %>
+    <% if @design.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@design.errors.count, "error") %> prohibited this design from being saved:</h2>
+
+        <ul>
+        <% @design.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="row">
+    <div class="col-md-4">
+      <h1>#</h1>
+    </div>
+<div class="col-md-8">
+    <div class="field-group">
+      <%= f.label :title %><br>
+      <%= f.text_field :title, class: 'form-control', placeholder: "Enter for design " %>
+    </div>
+    <div class="field-group">
+      <%= f.label :description %><br>
+      <%= f.cktext_area :description, :ckeditor => {:toolbar => 'Full'},class: 'form-control', placeholder: "Enter for design " %>
+    </div>
+    <div class="field-group">
+      <%= f.label :build %><br>
+      <%= f.text_field :build, class: 'form-control', placeholder: "Enter for design " %>
+    </div>
+    <div class="field-group">
+      <%= f.label :image %><br>
+      <%= f.text_field :image, class: 'form-control', placeholder: "Enter for design " %>
+    </div>
+    <div class="field-group">
+      <%= f.label :client %><br>
+      <%= f.text_field :client, class: 'form-control', placeholder: "Enter for design " %>
+    </div>
+    <div class="field-group">
+      <%= f.label :location %><br>
+      <%= f.text_field :location, class: 'form-control', placeholder: "Enter for design " %>
+    </div>
+    <div class="field-group">
+      <%= f.label :design_time %><br>
+      <%= f.text_field :design_time, class: 'form-control', placeholder: "Enter for design " %>
+    </div>
+    <div class="field-group">
+      <%= f.label :contruction_time %><br>
+      <%= f.text_field :contruction_time , class: 'form-control', placeholder: "Enter for design "%>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+  </div>
+</div>
+</div>

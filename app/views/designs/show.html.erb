@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<div class="container-fluid body-design-show">
+  <div class="design-background-show">
+    <h1 class="text-center design-title"><span class="design-frank-text">6</span>Architectural Designs by Michael Carney<span class="design-frank-text">6</span></h1>
+  </div>
+  <div class="col-md-12">
+    <h1 class="design-title-show text-center">
+      <%= @design.title %>
+    </h1>
+
+    <p>
+      <%= @design.build %>
+    </p>
+
+    <div class="design-description-show text-center">
+      <%= @design.description.html_safe %>
+    </div>
+
+    <% if policy(@design).edit? %>
+      <%= link_to 'Edit', edit_design_path(@design) %> |
+      <%= link_to 'Back', designs_path %>
+    <% end %>
+  </div>
+</div>
+<%= render partial: 'welcome/hire_me' %>

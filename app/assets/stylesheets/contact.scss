@@ -1,0 +1,35 @@
+.contact-body {
+  background-color: rgba(0, 0, 0, 1);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.hero-contact {
+  color: #fff;
+}
+
+.glyphicon-screenshot,
+.glyphicon-earphone,
+.glyphicon-map-marker {
+  color: #fff;
+  padding-right: 10px;
+}
+
+.form-control-text {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.contact-bullets {
+  color: #fff;
+  font-size: 2rem;
+
+  &:a {
+    color: #fff;
+  };
+}
+
+.contact-body {
+  color: #fff;
+  min-height: 900px;
+}

@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  
+  devise_for :users
+  mount Ckeditor::Engine => '/ckeditor'
+  resources :justins
+  resources :designers
+  resources :designs
+
+  resources :contacts, only: [:new, :create]
+
+
   get 'welcome/index'
 
   get 'welcome/about'
