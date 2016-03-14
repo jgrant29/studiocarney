@@ -11,10 +11,13 @@
 
 .design-title {
   color: #fff;
+  text-shadow: 2px 1px 0px #000;
+
 }
 
 .design-title-show {
   color: #fff;
+  font-size: 6.5rem;
   border-bottom: 1px solid #A00000;
 }
 
@@ -81,7 +84,6 @@
 
 .read-more {
   color: #fff;
-  font-size: 2rem;
   &:hover {
     color: #A00000;
     text-decoration: underline;
@@ -97,7 +99,9 @@ hr {
 
 .design-description-show p{
   color: #fff;
-  font-size: 3rem;
+    font-size: 2rem;
+  line-height: 40px;
+  letter-spacing: 3px;
 }
 
 .design-description-show h1, h2, h3, h4, h5{

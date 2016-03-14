@@ -63,6 +63,7 @@
   background: rgba(0, 0, 0, 0.7);
   height: 500px;
   padding-top: 25px;
+  border-bottom: 5px solid #fff;
 }
 
 .point-title {
@@ -78,7 +79,7 @@
 .latin {
   font-family: 'P22FLLWTerracottaExtra';
   color: #fff;
-  font-size: 8rem;
+  font-size: 13rem;
 }
 
 .latin-mid {
@@ -88,15 +89,19 @@
 }
 
 .point-description {
+  font-family: 'Open Sans', sans-serif;
   padding-top: 25px;
-  font-weight: 600;
   color: #fff;
-  font-size: 2.35rem;
+  font-size: 1.5rem;
+  font-size: 300;
+  line-height: 40px;
 }
 
 .about-body {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
+  line-height: 40px;
+  letter-spacing: 3px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -104,7 +109,7 @@
   color: #fff;
   margin-top: 5rem;
   margin-bottom: 10rem;
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 .about-heading {
@@ -133,8 +138,8 @@
 }
  
 .front-testimonial {
-  font-size: 2.5rem;
-  font-weight: 600
+  font-size: 2rem;
+  line-height: 40px;
 }
 
 .thumbnail-background {
@@ -150,19 +155,18 @@
 .col-adjust-footer {
   background: rgba(0, 0, 0, .7);
   height: 225px;
-  border-top: 5rem solid rgba(255, 255, 255, .1);
+  border-top: 5px solid rgba(255, 255, 255, 1);
 }
 
 .footer-information {
   padding-top: 15px;
   color: #fff;
-  font-size: 2rem;
 }
 
 .latin-footer {
   font-family: 'P22FLLWTerracottaExtra';
-  color: #fff;
   font-size: 5rem;
+  color: #fff;
 }
 
 .about-header-image {
@@ -188,20 +192,19 @@
 }
 
 .hire-me {
-  min-height: 200px;
-  background-color: rgba(0, 0, 0, .8);
+  min-height: 10px;
+  background-color: rgba(0, 0, 0, 1);
   position: relative;
-  z-index: 1;
 }
 
 .hire-me-text {
   margin-top: 70px;
   padding-top: 3px;
-  background-color: rgba(255, 255, 255, .9);
-  width: 33%;
+  background-color: rgba(255, 255, 255, 1);
+  width: 15%;
   height: 5rem;
-  margin-left: 33%;
-  font-size: 3rem;
+  margin-left: 42.5%;
+  font-size: 1.5rem;
   color: #000;
   border: 1px solid #fff;
   vertical-align: center;
