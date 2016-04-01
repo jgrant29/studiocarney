@@ -1,0 +1,29 @@
+.services-header {
+  font-size: 10rem;
+  font-family: 'P22FLLWTerracotta';
+  color: #fff;
+  background-image: image_url("stoplight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 280px;
+  border: 5px solid #fff;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.services-bullet {
+  letter-spacing: 2px;
+  line-height: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 3rem;
+  color: #fff;
+
+}
+
+.services {
+  background-color: rgba(0, 0, 0, .6);
+}

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'service/index'
+
   devise_for :users
   mount Ckeditor::Engine => '/ckeditor'
   resources :justins

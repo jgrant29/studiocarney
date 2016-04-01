@@ -26,8 +26,9 @@
       <div class="collapse navbar-collapse fixed" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="/welcome/about">About</a></li>
-          <li><a href="/designs">Design</a></li>
+          <li><a href="/designs">Portfolio</a></li>
           <li><a href="/contacts/new">Contact</a></li>
+          <li><a href="/service/index">Services</a></li>
           <% if current_user %>
              <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
              <% end %>
@@ -45,10 +46,10 @@
   </nav>
 
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel" class="carousel carousel-background slide carousel-fade" data-ride="carousel">
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner carousel-inner-background" role="listbox">
     <div class="item active picture">
       <%= image_tag("bridge.jpg") %>
     </div> 
@@ -56,14 +57,11 @@
       <%= image_tag("stoplight.jpg") %> 
     </div> 
     <div class="item picture">
-      <%= image_tag("ceilinglight.jpg", class: "img_preview") %> 
+      <%= image_tag("ceilinglight.jpg") %> 
     </div>
     <div class="item picture">
       <%= image_tag("studio2.jpg") %>
     </div> 
-    <div class="item picture">
-      <%= image_tag("studio2.jpg") %>
-    </div>
     <div class="item picture">
       <%= image_tag("building-4.jpg") %> 
     </div>
@@ -76,13 +74,29 @@
     <div class="item picture">
       <%= image_tag("tallbuildilng.jpg") %> 
     </div>
+    <div class="item picture">
+      <%= image_tag("colosium.jpg") %> 
+    </div>
+    <div class="item picture">
+      <%= image_tag("house.jpg") %> 
+    </div>
+    <div class="item picture">
+      <%= image_tag("Florence.jpg") %> 
+    </div>
   </div>
-
 </div>
 </div>
 
 <%= yield %>
-
 <%= render partial: 'welcome/footer' %>
 </body>
 </html>
+
+<script>
+var randomSlide = Math.floor(Math.random() * $('#carousel .carousel-inner div').size());
+
+jQuery(document).ready(function($) {
+$('#carousel').carousel(randomSlide);
+$('#carousel').carousel('next');
+});
+</script>

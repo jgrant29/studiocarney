@@ -5,6 +5,7 @@
 @import "designs";
 @import "font-awesome";
 @import "contact";
+@import "service";
 
 @font-face {
   font-family: 'P22FLLWTerracotta';
@@ -66,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #000;
 }
 
-.carousel {
+.carousel-background {
    opacity: .4;
    position: fixed; 
    height: 100%;
@@ -74,21 +75,49 @@ h1, h2, h3, h4, h5, h6 {
    z-index: -1;
   }
   
- #carousel-example-generic {
+ #carousel {
    height: 100%;
  }
  
- .carousel-inner  {
+ .carousel-inner-background  {
    height: 100%;
  }
- 
- .carousel-inner > .item {
+
+ .carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+            -webkit-transition-property: opacity;
+            -moz-transition-property: opacity;
+            -o-transition-property: opacity;
+            transition-property: opacity;
+            transition-duration: 1s;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+      }
+    }
+
+
+ .carousel-inner-background > .item {
    height:100%;
  }
- .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+ .carousel-inner-background > .item > img, .carousel-inner-background > .item > a > img {
    min-width: 100%;
    height: 100%;
    object-fit: cover;
+   -webkit-transition-property: opacity;
+  transition-property: opacity;
   }
 
 @media (max-width: 770px) {

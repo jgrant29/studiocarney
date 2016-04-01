@@ -22,5 +22,6 @@ Rails.application.config.assets.precompile += %w( town-2.jpg )
 Rails.application.config.assets.precompile += %w( building-4.jpg )
 Rails.application.config.assets.precompile += %w( bridge.jpg )
 Rails.application.config.assets.precompile += %w( Florence.jpg )
+Rails.application.config.assets.precompile += %w( ALA-Member-Color-Apr1.jpg )
 
 Rails.application.config.assets.precompile += %w( ckeditor/* )
