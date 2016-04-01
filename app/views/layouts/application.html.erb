@@ -27,8 +27,8 @@
         <ul class="nav navbar-nav">
           <li><a href="/welcome/about">About</a></li>
           <li><a href="/designs">Portfolio</a></li>
-          <li><a href="/contacts/new">Contact</a></li>
           <li><a href="/service/index">Services</a></li>
+          <li><a href="/contacts/new">Contact</a></li>
           <% if current_user %>
              <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
              <% end %>
