@@ -24,6 +24,7 @@ Rails.application.config.assets.precompile += %w( bridge.jpg )
 Rails.application.config.assets.precompile += %w( Florence.jpg )
 Rails.application.config.assets.precompile += %w( ALA-Member-Color-Apr1.jpg )
 Rails.application.config.assets.precompile += %w( ALA-Member-001.jpg )
+Rails.application.config.assets.precompile += %w( favicon.ico )
 
 
 Rails.application.config.assets.precompile += %w( ckeditor/* )
