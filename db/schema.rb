@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160310222307) do
+ActiveRecord::Schema.define(version: 20160404165013) do
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -35,18 +35,8 @@ ActiveRecord::Schema.define(version: 20160310222307) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "designs", force: :cascade do |t|
-    t.string   "title"
-    t.text     "description"
-    t.string   "build"
-    t.string   "image"
-    t.string   "client"
-    t.string   "location"
-    t.string   "design_time"
-    t.string   "contruction_time"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
+# Could not dump table "designs" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "justins", force: :cascade do |t|
     t.string   "title"

@@ -8,22 +8,30 @@
   background-position: center center;
   height: 280px;
   border: 5px solid #fff;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .services-bullet {
   letter-spacing: 2px;
-  line-height: 5rem;
+  line-height: 10rem;
   margin-top: 10rem;
   margin-bottom: 10rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  font-size: 3rem;
+  font-size: 5.5rem;
   color: #fff;
 
 }
 
 .services {
   background-color: rgba(0, 0, 0, .6);
+}
+
+@media (max-width: 620px) {
+  .services-bullet {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  li {
+    margin-top: 3rem;
+  }
 }

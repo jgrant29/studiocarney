@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bootstrap-sass'
 gem 'ckeditor'
-gem 'carrierwave'
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'mini_magick'
 gem 'pundit'
 gem 'devise'
