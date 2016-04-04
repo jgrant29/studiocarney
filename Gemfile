@@ -10,6 +10,7 @@ gem 'figaro', '1.0'
 gem "font-awesome-rails"
 gem 'mail_form'
 gem 'fog'
+gem 'friendly_id', '~> 5.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
