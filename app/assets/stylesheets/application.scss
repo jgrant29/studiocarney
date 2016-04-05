@@ -152,6 +152,12 @@ h1, h2, h3, h4, h5, h6 {
   } 
 }*/
 
+.ckeditor-image  {
+  &:hover {
+    transform: scale(2);
+  };
+}
+
 .footer {
     bottom: 0;
     width: 100%;
