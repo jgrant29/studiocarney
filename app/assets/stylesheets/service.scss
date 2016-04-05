@@ -28,10 +28,14 @@
 
 @media (max-width: 620px) {
   .services-bullet {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 5rem;
   }
   li {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
+    .services-header {
+    font-size: 7rem;
+  }
+
 }
