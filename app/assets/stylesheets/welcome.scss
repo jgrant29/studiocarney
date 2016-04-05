@@ -248,6 +248,8 @@
     height: auto;
     margin-top: -1rem;
     padding-top: 0px;
+    border-bottom: none;
+    padding-bottom: 4rem;
   }
 
   .col-adjust-footer {
@@ -326,13 +328,15 @@
     font-size: 1.75rem; 
     letter-spacing: 4px;
   }
+
+  .footer-information {
+    padding-bottom: 5rem;
+  }
 }
 
 .about-heading {
   font-size: 5rem;
 }
-
-
 
 @media (max-width: 480px) {
 
