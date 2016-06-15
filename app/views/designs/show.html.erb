@@ -1,21 +1,40 @@
 <p id="notice"><%= notice %></p>
 <div class="container-fluid body-design-show">
   <div class="design-background-show">
-    <div class="text-center design-title"><span class="design-frank-text">6</span>Portfolio<span class="design-frank-text">6</span></div>
+    <div class="text-center design-title">
+      <span class="design-frank-text">6</span>
+      Portfolio
+      <span class="design-frank-text">6</span>
+    </div>
   </div>
-  <div class="col-md-12">
+  <div class="col-md-12 ">
     <h1 class="design-title-show text-center">
       <%= @design.title %>
     </h1>
-
-    <div class="design-description-show text-center">
+    <div class="design-description-show">
       <%= @design.description.html_safe %>
     </div>
-
+    <div class="text-center masonry-portfolio-show">
+      <% @design.design_image_attachments.each do |d| %>
+        <div class="design-box-show">
+          <%= image_tag(d.image) %>
+        </div>
+      <% end %>
+    </div>
     <% if policy(@design).edit? %>
       <%= link_to 'Edit', edit_design_path(@design) %> |
       <%= link_to 'Back', designs_path %>
     <% end %>
   </div>
 </div>
+
 <%= render partial: 'welcome/hire_me' %>
+
+<script>
+  $(window).load(function() {
+    $('.masonry-portfolio-show').masonry({
+      // options
+      itemSelector: '.design-box-show',
+    });
+  })
+</script>

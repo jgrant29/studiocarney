@@ -1,29 +1,67 @@
 <div class="container-fluid body-design">
   <div class="design-background">
-    <div class="text-center design-title"><span class="design-frank-text">6</span>Portfolio<span class="design-frank-text">6</span></div>
-  </div>
-<% @designs.in_groups_of(3, false).each do |group| %>
-  <div class="row">
-    <% group.each do |design| %>
-    <div class="col-md-4 text-center design-box">
-      <div class="design-image-index">
-        <%= link_to design.image, design %>
-      </div>
-      <div class="design-build-index">
-        <%= simple_format design.build %>
-      </div>
-      <div>
-        <%= link_to "View", design, class: "read-more"%>
-      </div>
+    <div class="text-center design-title">
+      <span class="design-frank-text">6</span>
+      Portfolio
+      <span class="design-frank-text">6</span>
     </div>
+  </div>
+  <div class="masonry-portfolio text-center">
+    <% @designs.each do |design| %>
+      <div class="text-center design-box">
+        <%= link_to image_tag(design.picture), design %>
+        <%= link_to design do %>
+        <% end %>
+        <div class="overlay">
+          <%= link_to design do %>
+          <div class="overlay-title">
+            <%= design.title %>
+          </div>
+           <% end %>
+        </div>
+      </div>
     <% end %>
   </div>
-<% end %>
 </div>
 
-<br>
+<%= render partial: 'welcome/hire_me' %>
+
 <% if policy(Design.new).create? %>
   <%= link_to 'New Design', new_design_path %>
 <% end %>
-<%= render partial: 'welcome/hire_me' %>
+
+<script>
+  var animateReview = function() {
+      var revealReview = function() {
+          $(this).css({
+              opacity: 1,
+              transform: 'scaleX(1) translateY(0)'
+          });
+      };
+
+      $.each($('.design-box'), revealReview);
+  };
+     
+   $(window).load(function() {
+       if ($(window).height() > 50) {
+           animateReview();
+       }
+              
+       var scrollDistance = $('.masonry-portfolio').offset().top - $(window).height() + 200;
+       $(window).scroll(function(event) {
+           if ($(window).scrollTop() >= scrollDistance) {
+               animateReview();
+           }
+       });
+   });
+</script>
+
+<script>
+  $(window).load(function() {
+    $('.masonry-portfolio').masonry({
+      // options
+      itemSelector: '.design-box',
+    });
+  })
+</script>
 

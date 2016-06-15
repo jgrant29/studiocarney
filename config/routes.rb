@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :design_image_attachments
   get 'service/index'
 
   devise_for :users

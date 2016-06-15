@@ -14,6 +14,7 @@ class DesignsController < ApplicationController
 
   # GET /designs/new
   def new
+    @images = DesignImageAttachment.all
     @design = Design.new
   end
 
@@ -24,7 +25,7 @@ class DesignsController < ApplicationController
   # POST /designs
   # POST /designs.json
   def create
-        @design = Design.new(design_params)
+    @design = Design.new(design_params)
 
     authorize @design
     respond_to do |format|
@@ -72,6 +73,6 @@ class DesignsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def design_params
-      params.require(:design).permit(:title, :description, :build, :image, :client, :location, :design_time, :contruction_time, {images: []})
+      params.require(:design).permit(:title, :picture, :design_image_attachment, :description, :build, :image, :client, :location, :design_time, :contruction_time, :design_image_attachment_ids => [])
     end
 end

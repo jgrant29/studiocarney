@@ -1,24 +1,23 @@
 <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12">
-        <div class="text-center front-title">Studio Carney</div>
-        <div class="text-center architecture-border">ARCHITECTURE</div>
-        <div class="text-center translating-front-text">"Translating the language of architecture"</div>
+      <div class="col-sm-12 col-md-12 col-lg-12 front-display">
+        <div class="animate-title text-center front-title ">Studio Carney</div>
+        <div class="animate-title text-center architecture-border">ARCHITECTURE</div>
+        <div class="animate-title text-center translating-front-text ">"Translating the language of architecture"</div>
       </div>
-
       <div class="front-mid">
-        <div class="col-md-4 col-adjust text-center">
-          <span class="latin text-center">&#x7E</span>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-adjust text-center">
+          <span class="latin text-center">m</span>
           <h5 class="point-title">17 Years Experience</h5>
           <p class="point-description">Single family and multi-family residential projects, retail, corporate office and public projects including storage facilities, banks, community centers and libraries.</p>
         </div>
-        <div class="col-md-4 col-adjust text-center">
-          <span class="latin text-center">&#x3B</span>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-adjust text-center">
+          <span class="latin text-center">K</span>
           <h5 class="point-title">Collaboration</h5>
           <p class="point-description">We believe each project should be a collaborative effort and work to include the Client in the design process.</p>
         </div>
-        <div class="col-md-4 col-adjust text-center">
-          <span class="latin text-center">&#x22</span>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-adjust text-center">
+          <span class="latin text-center">m</span>
           <h5 class="point-title">Vision</h5>
           <p class="point-description">Our goal is to take your vision and apply our imagination and technical experience to help translate that into a built environment.</p>
         </div>
@@ -27,59 +26,152 @@
   </div>
 </div>
 
+<div class="container-fluid latest-work">
+  <h1 class="text-center latest-work-header latest-animate">Latest Project</h1>
+  <div clas="row">
+    <div class="col-sm-6 col-md-6 col-lg-6 latest-picture latest-animate">
+      <%= image_tag(@designs.first.picture) %>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 latest-animate">
+      <h2><%= @designs.first.title %></h2>
+      <div class="latest-work-description">
+        <%= sanitize(@designs.first.description).truncate(700).html_safe %><br>
+          <%= link_to "Learn more", @designs.last %>
+      </div>
+    </div>
+  </div>
+</div> 
 
-<div class="container-fluid">
+<div class="container-fluid section-review">
   <div class="row">
     <div class="media-body text-center">
-      <div class="col-md-12 col-adjust-mid">
-        <div id="carousel-example-generic" class="carousel carousel-fade slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-<!--     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
- -->  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <span class="latin-mid text-center">a(X)f</span>
-              <h1 class="media-heading media-heading-adjust">Working with Michael brought us...</h1>
-              <div class="front-testimonial"> Working with Michael brought us results that exceeded our expectations.  Michael listened to our needs, presented options and led us to decisions that maximized the use of our space and budget.  We couldn’t be more pleased with the end result and are the envy of all our friends when we show it off.I am pleased to recommend Michael Carney as an architect. My husband doesn’t want to hear about my next remodeling project, but I will be engaging Michael in the future for our next set of plans.<br> We love our new space!<br>~Patti</div><br><br><br>
-    </div>
-    <div class="item">
-        <span class="latin-mid text-center">a(Y)f</span>
-        <h1 class="media-heading media-heading-adjust">I was lucky to have had Mike...</h1>
-        <div class="front-testimonial">I was lucky to have had Mike recommended when I was talking about my wish to add a master suite with a friend.  After an initial meeting about my wishes, he presented several different designs.  They were all beautiful and I really appreciated Mike's eye for detail. After choosing and tweaking a design together, we got to work.  Mike went above and beyond by personally helping me select components for the new bathroom.  He was always available for questions and concerns I had throughout the construction process.  He often came out to the site to check that the construction was being done to his satisfaction.  The end result is the master suite I dreamed of!</div><br><br><br>
-    </div>
-  </div>
-</div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<%= render partial: 'welcome/hire_me' %>
-
-<!-- <div class="container-fluid">
-  <div class="row thumbnail-background">
-    <div class="col-sm-6">
-      <div class="thumbnail text-center">
-        <%= image_tag("stoplight.jpg") %>
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>...</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="thumbnail text-center">
-        <%= image_tag("stoplight.jpg") %>
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>...</p>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-adjust-mid">
+        <div id="carousel-example-generic" class="carousel carousel-fade slide" data-interval="20000" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <span class="latin-mid animate-review">X</span> 
+              <div class="front-testimonial animate-review"> 
+                Working with Michael brought us results that exceeded our expectations.  Michael listened to our needs, presented options and led us to decisions that maximized the use of our space and budget.  We couldn’t be more pleased with the end result and are the envy of all our friends when we show it off.I am pleased to recommend Michael Carney as an architect. My husband doesn’t want to hear about my next remodeling project, but I will be engaging Michael in the future for our next set of plans.<br> We love our new space!<br>~Patti
+              </div><br><br><br>
+            </div>
+            <div class="item ">
+              <span class="latin-mid animate-review">M</span>
+              <div class="front-testimonial animate-review">
+                I was lucky to have had Mike recommended when I was talking about my wish to add a master suite with a friend.  After an initial meeting about my wishes, he presented several different designs.  They were all beautiful and I really appreciated Mike's eye for detail. After choosing and tweaking a design together, we got to work.  Mike went above and beyond by personally helping me select components for the new bathroom.  He was always available for questions and concerns I had throughout the construction process.  He often came out to the site to check that the construction was being done to his satisfaction.  The end result is the master suite I dreamed of!
+              </div><br><br><br>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div> -->
+</div>
+<%= render partial: 'hire_me' %>
+<script>
+  var animateFrontTitle = function() {
+    var revealFrontTitle = function() {
+      $(this).css({
+        opacity: 1,
+        transofmr: 'scaleX91) translateY(0)'
+      });
+    };
+
+    $.each($('.animate-title'), revealFrontTitle);
+};
+
+ $(document).ready(function() {
+     if ($(window).height() > 50) {
+         animateFrontTitle();
+     }
+
+    var scrollDistance = $('.front-display').offset().top - $(window).height() + 200;
+     $(window).scroll(function(event) {
+         if ($(window).scrollTop() >= scrollDistance) {
+             animateFrontTitle();
+         }
+     });
+   });
+</script>
+
+<script>
+  var animatePoints = function() {
+      var revealPoint = function() {
+          $(this).css({
+              opacity: 1,
+              transform: 'scaleX(1) translateY(0)'
+          });
+      };
+
+      $.each($('.col-adjust'), revealPoint);
+  };
+     
+   $(window).load(function() {
+       if ($(window).height() > 950) {
+           animatePoints();
+       }
+              
+       var scrollDistance = $('.front-mid').offset().top - $(window).height() + 200;
+       $(window).scroll(function(event) {
+           if ($(window).scrollTop() >= scrollDistance) {
+               animatePoints();
+           }
+       });
+   });
+</script>
+
+<script>
+  var animateReview = function() {
+      var revealReview = function() {
+          $(this).css({
+              opacity: 1,
+              transform: 'scaleX(1) translateY(0)'
+          });
+      };
+
+      $.each($('.animate-review'), revealReview);
+  };
+     
+   $(window).load(function() {
+       if ($(window).height() > 950) {
+           animateReview();
+       }
+              
+       var scrollDistance = $('.section-review').offset().top - $(window).height() + 200;
+       $(window).scroll(function(event) {
+           if ($(window).scrollTop() >= scrollDistance) {
+               animateReview();
+           }
+       });
+   });
+</script>
+<script>
+  var animateLatestWork = function() {
+      var revealLatestWork = function() {
+          $(this).css({
+              opacity: 1,
+              transform: 'scaleX(1) translateY(0)'
+          });
+      };
+
+      $.each($('.latest-animate'), revealLatestWork);
+  };
+     
+   $(window).load(function() {
+       if ($(window).height() > 950) {
+           animateLatestWork();
+       }
+              
+       var scrollDistance = $('.latest-work').offset().top - $(window).height() + 200;
+       $(window).scroll(function(event) {
+           if ($(window).scrollTop() >= scrollDistance) {
+               animateLatestWork();
+           }
+       });
+   });
+</script>
