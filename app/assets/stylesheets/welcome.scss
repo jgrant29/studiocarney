@@ -281,7 +281,7 @@
   background-size: contain;
   background-position: center left;*/
   background-color: rgba(0, 0, 0, .6);
-  height: 550px;
+  height: auto;
   border-top: 1px solid #FFFFFF;
   padding-bottom: 5rem;
 
@@ -294,18 +294,7 @@
   }
 }
 
-.hire-me-text {
-  opacity: 0;
-  -webkit-transform: scaleX(0.9) translateY(3rem);
-  -moz-transform: scaleX(0.9) translateY(3rem);
-  transform: scaleX(0.9) translateY(3rem);
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  transition-delay: 0.2s; 
-}
+
 
 .ala-certificate {
   background-color: rgba(255, 255, 255, .6);
@@ -371,11 +360,13 @@
 
 @media (max-width: 645px) {
 
+  .latin {
+    font-size: 10rem;
+  }
+
     .hire-me-text {
-      margin-top: 170px;
-      width: 55%;
-      height: 5rem;
-      margin-left: 22.5%;
+      margin-top: 0px;
+      height: 100%;
   }
 
   .front-title {
@@ -426,6 +417,11 @@
 }
 
 @media (max-width: 480px) {
+
+  .latin {
+    margin-top: 0;
+
+  }
 
   .front-title {
     font-size: 5rem;

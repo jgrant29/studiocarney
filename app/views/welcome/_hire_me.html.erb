@@ -6,29 +6,3 @@
       <%= link_to "Get in touch with us", new_contact_path %>
     </div>
 </section>
-
-<script>
-  var animateHireMe = function() {
-      var revealHireMe = function() {
-          $(this).css({
-              opacity: 1,
-              transform: 'scaleX(1) translateY(0)'
-          });
-      };
-
-      $.each($('.hire-me-text'), revealHireMe);
-  };
-     
-   $(window).load(function() {
-       if ($(window).height() > 950) {
-           animateHireMe();
-       }
-              
-       var scrollDistance = $('.hire-me').offset().top - $(window).height() + 200;
-       $(window).scroll(function(event) {
-           if ($(window).scrollTop() >= scrollDistance) {
-               animateHireMe();
-           }
-       });
-   });
-</script>
