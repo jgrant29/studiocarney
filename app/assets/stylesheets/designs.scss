@@ -113,7 +113,7 @@
     background-color: transparent;
     width: 100%;
     border: 10px solid transparent;
-    transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in;
     z-index: -1;
     opacity: .8;
     
@@ -125,11 +125,11 @@
       margin: auto;
       vertical-align: center;
       -webkit-transform: scale(1.2);
-      -ms-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in;
       -ms-transform: scale(1.2);   
-      -moz-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in;
       -moz-transform: scale(1.2);
-      transition: all .5s ease-in-out;
+      transition: all .5s ease-in;
       transform: scale(1.2);
       z-index:2 !important;
     }

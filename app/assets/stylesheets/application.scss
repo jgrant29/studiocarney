@@ -35,16 +35,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'P22FLLWTerracotta';
 }
 
+.container-fluid {
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
 .navbar-default {
-  background-color: transparent;
   filter: alpha(opacity=40);
   border-bottom: 1px solid #0074D9;
+  background-color: transparent;
 }
 
 .navbar-default .navbar-nav > li > a {
   font-family: 'P22FLLWTerracotta';
   color: #fff;
-  border-bottom: 2px solid transparent;
   font-size: 2rem;
   text-shadow: 2px 1px 0px #000;  
   padding-bottom: 3px;
@@ -52,6 +56,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     border-bottom: 3px solid #fff;
   }
+  &:active {
+    color: #fff;
+  };
 }
 
 .navbar-default .navbar-brand {
