@@ -5,6 +5,11 @@
         <div class="animate-title text-center architecture-border">ARCHITECTURE</div>
         <div class="animate-title text-center translating-front-text ">"Translating the language of architecture"</div>
       </div>
+        <section>
+          <div class="col-md-12 arrow text-center">
+            <div class="glyphicon glyphicon-menu-down"></div>
+          </div>
+        </section>
       <div class="front-mid">
         <div class="col-sm-4 col-md-4 col-lg-4 col-adjust text-center">
           <span class="latin text-center">m</span>
@@ -27,19 +32,19 @@
 </div>
 
 <div class="container-fluid latest-work">
-  <h1 class="text-center latest-work-header latest-animate">Latest Project</h1>
-  <div clas="row">
-    <div class="col-sm-6 col-md-6 col-lg-6 latest-picture latest-animate">
-      <%= image_tag(@designs.first.picture) %>
+  <h1 class="text-center latest-work-header latest-animate">Latest Projects</h1>  
+  <% @designs.in_groups_of(3, false).each do |group| %>
+    <div clas="row">
+      <% group.each do |design| %>
+        <div class="col-sm-4 col-md-4 col-lg-4 latest-picture latest-animate">
+          <%= link_to design do %>
+            <%= image_tag(design.picture) %>
+            <h1 class="text-center latest-project-title"><%= design.title %></h1>
+          <% end %>
+        </div>
+        <% end %>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-6 latest-animate">
-      <h2><%= @designs.first.title %></h2>
-      <div class="latest-work-description">
-        <%= sanitize(@designs.first.description).truncate(700).html_safe %><br>
-          <%= link_to "Learn more", @designs.last %>
-      </div>
-    </div>
-  </div>
+  <% end %>
 </div> 
 
 <div class="container-fluid section-review">
@@ -111,7 +116,7 @@
       $.each($('.col-adjust'), revealPoint);
   };
      
-   $(window).load(function() {
+   $(document).ready(function() {
        if ($(window).height() > 950) {
            animatePoints();
        }
@@ -137,7 +142,7 @@
       $.each($('.animate-review'), revealReview);
   };
      
-   $(window).load(function() {
+   $(document).ready(function() {
        if ($(window).height() > 950) {
            animateReview();
        }
@@ -162,7 +167,7 @@
       $.each($('.latest-animate'), revealLatestWork);
   };
      
-   $(window).load(function() {
+   $(document).ready(function() {
        if ($(window).height() > 950) {
            animateLatestWork();
        }
@@ -171,6 +176,27 @@
        $(window).scroll(function(event) {
            if ($(window).scrollTop() >= scrollDistance) {
                animateLatestWork();
+           }
+       });
+   });
+</script>
+<script>
+  var animateArrow = function() {
+    var revealArrow = function() {
+      $(this).css({
+        opacity:0
+      });
+    };
+
+    $.each($('.glyphicon'), revealArrow);
+};
+
+   $(document).ready(function() {
+              
+       var scrollDistance = $('.arrow').offset().top - $(window).height() + 200;
+       $(window).scroll(function(event) {
+           if ($(window).scrollTop() >= scrollDistance) {
+               animateArrow();
            }
        });
    });

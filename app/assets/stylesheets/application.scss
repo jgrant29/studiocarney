@@ -35,41 +35,60 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'P22FLLWTerracotta';
 }
 
-.container-fluid {
-    background: rgba(0, 0, 0, 0.5);
+.container-fluid-dark {
+    background: rgba(17,17,17, 0.5);
 
 }
 
 .navbar-default {
-  filter: alpha(opacity=40);
   border-bottom: 1px solid #0074D9;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > li > a {
   font-family: 'P22FLLWTerracotta';
-  color: #fff;
-  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2.2rem;
   text-shadow: 2px 1px 0px #000;  
-  padding-bottom: 3px;
+  -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    transition: all 0.50s ease-in-out;
+    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    transition-timing-function: ease-in-out;
   &:hover {
+    color: rgba(255, 255, 255, 1);
+    -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    transition: all 0.50s ease-in-out;
+    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    transition-timing-function: ease-in-out;
     cusor: pointer;
-    color: #fff;
-    border-bottom: 3px solid #fff;
+    -webkit-transform: scale(1.05);
   }
+
   &:active {
-    color: #fff;
+    color: #fff !important;
   };
 }
 
 .navbar-default .navbar-brand {
   font-family: 'P22FLLWTerracotta';
-  font-weight: 600;
-  color: #fff;
-  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2.5rem;
   text-shadow: 2px 1px 0px #000;  
+  -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    transition: all 0.50s ease-in-out;
+    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    transition-timing-function: ease-in-out;
   &:hover {
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
+    -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    transition: all 0.50s ease-in-out;
+    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    transition-timing-function: ease-in-out;
+    cusor: pointer;
   }
 }
 

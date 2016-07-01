@@ -1,7 +1,6 @@
 .body-design {
   min-height: 100rem;
   margin-bottom: -20px;
-  background-color: rgba(0, 0, 0, .6);
 }
 
 .body-design-show {
@@ -99,7 +98,7 @@
   position: absolute;
   vertical-align: middle;
   text-align: center; 
-  top:45%;
+  padding-top: 25%;
 };
 
 .design-box:hover .overlay {
@@ -114,11 +113,8 @@
     width: 100%;
     border: 10px solid transparent;
     transition: transform .8s ease-in;
-    z-index: -1;
-    opacity: .8;
-    
+    z-index: -1;    
     &:hover {
-      opacity: 1;
       position: absolute;
       right: 0;
       left: 0;

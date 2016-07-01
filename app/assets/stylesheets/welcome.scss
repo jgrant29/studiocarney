@@ -1,3 +1,9 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0)}
+  40% {transform: translateY(-30px)}
+  60% {transform: translateY(-15px)}
+}
+
 .hero-about {
   margin-top: 75px;
   font-family: 'P22FLLWTerracottaExtras';
@@ -94,10 +100,10 @@
 .latest-work {
   padding-top: 5rem;
   padding-bottom: 25px;
-  background-color: rgba(0, 0, 0, 0.6);
   img {
-    border: 3px solid #FFFFFF;
+    border: 2px solid #111111;
     width: 100%;
+    border-radius: 5px
 }
 
 .latest-animate {
@@ -168,7 +174,18 @@
   transition: all 0.35s ease-in-out;
   -webkit-transition-delay: 0.2s;
   -moz-transition-delay: 0.2s;
-  transition-delay: 0.2s; 
+  transition-delay: 0.2s;
+
+}
+
+.latest-project-title, a {
+  color: #FFFFFF;
+  text-decoration: none;
+
+  &:hover, &:focus {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
 }
 
 .latin-mid {
@@ -280,17 +297,27 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left;*/
-  background-color: rgba(0, 0, 0, .6);
   height: auto;
   border-top: 1px solid #FFFFFF;
   padding-bottom: 5rem;
-
   a {
     color: #FFFFFF;
     text-decoration: underline;
+    -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    transition: all 0.50s ease-in-out;
+    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    transition-timing-function: ease-in-out;
     &:hover {
-      color: #0074D9;
-    };
+      color: rgb(0,116,217);
+      -webkit-transition: all 0.50s ease-in-out;
+      -moz-transition: all 0.50s ease-in-out;
+      transition: all 0.50s ease-in-out;
+      webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+      transition-timing-function: ease-in-out;
+      cusor: pointer;
+      -webkit-transform: scale(1.2);
+    }
   }
 }
 
@@ -441,4 +468,16 @@
   .latin-mid {
     font-size: 10rem;
   }
+}
+
+.arrow  {
+  padding-top: 15rem;
+  margin-bottom: -12rem;
+  opacity: .7;
+  color: #FFFFFF;
+  font-size: 6rem;
+  font-weight: 300;
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
