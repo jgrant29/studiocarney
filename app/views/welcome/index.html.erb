@@ -33,7 +33,7 @@
 
 <div class="container-fluid latest-work">
   <h1 class="text-center latest-work-header latest-animate">Latest Projects</h1>  
-  <% @designs.in_groups_of(3, false).each do |group| %>
+  <% @design_group.in_groups_of(3, false).each do |group| %>
     <div clas="row">
       <% group.each do |design| %>
         <div class="col-sm-4 col-md-4 col-lg-4 latest-picture latest-animate">
