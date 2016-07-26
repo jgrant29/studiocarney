@@ -78,4 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { host: 'www.studiocarney.com' }
   config.action_controller.asset_host = "d3h13ih4v9dpqs.cloudfront.net"
+  config.action_controller.asset_host = "d3u00dy42hyxvp.cloudfront.net"
 end
