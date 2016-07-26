@@ -1,12 +1,11 @@
 source 'https://rubygems.org'
-ruby "2.1"
 
 gem 'bootstrap-sass'
 gem 'ckeditor'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'mini_magick'
 gem 'pundit'
-gem 'devise'
+gem 'devise', '~> 4.2.0'
 gem 'figaro', '1.0'
 gem "font-awesome-rails"
 gem 'mail_form'
