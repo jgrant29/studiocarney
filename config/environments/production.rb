@@ -76,6 +76,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { host: 'frozen-atoll-64894.herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: 'www.studiocarney.com' }
   config.action_controller.asset_host = "d3u00dy42hyxvp.cloudfront.net"
 end
