@@ -6,5 +6,4 @@ CarrierWave.configure do |config|
   }
   config.fog_directory  = ENV['AWS_BUCKET']
   config.fog_public     = true
-  config.asset_host = "d26lu821cd4xhi.cloudfront.net"
 end
