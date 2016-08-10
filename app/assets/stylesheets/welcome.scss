@@ -278,6 +278,7 @@
 }
 
 .about-header-image {
+
   padding-top: 10rem;
 }
 
@@ -287,6 +288,20 @@
 
 .about-me {
   padding-bottom: 5rem;
+}
+
+.mike-portfolio-picture {
+  background-image: image_url("michael.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  float:left;
+  background-position: center center;
+  margin-left: 15px;
+  margin-right: 25px;
+  margin-top: 12rem;
 }
 
 .hire-me {
