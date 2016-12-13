@@ -24,8 +24,8 @@ src:font-url('webfonts/2CE4AA_0_0.eot?#iefix') format('embedded-opentype'),
 
 
 body { 
-  font-family: 'Open Sans', sans-serif;
-  background-color: #111111;
+  background-image: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  font-family: "source-sans-pro", sans-serif;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -36,36 +36,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-fluid-dark {
-    background: rgba(17,17,17, 0.5);
-
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar-default {
-  border-bottom: 1px solid #0074D9;
+  border: none;
+}
+
+.navbar-adjust {
   background-color: transparent;
 }
 
-.navbar-default .navbar-nav > li > a {
-  font-family: 'P22FLLWTerracotta';
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 2.2rem;
-  text-shadow: 2px 1px 0px #000;  
-  -webkit-transition: all 0.50s ease-in-out;
-    -moz-transition: all 0.50s ease-in-out;
-    transition: all 0.50s ease-in-out;
-    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
-    transition-timing-function: ease-in-out;
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-    -webkit-transition: all 0.50s ease-in-out;
-    -moz-transition: all 0.50s ease-in-out;
-    transition: all 0.50s ease-in-out;
-    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
-    transition-timing-function: ease-in-out;
-    cusor: pointer;
-    -webkit-transform: scale(1.05);
-  }
+.navbar-adjust-scroll {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
+.navbar-adjust .navbar-nav > li > a {
+  color: #ffffff;
+  &:hover {
+    color: #DDDDDD;
+    cusor: pointer;
+  }
+}
+
+.navbar-adjust-scroll .navbar-nav > li > a {
+  color: #404040;
+  &:hover {
+    color: #111111;
+    cusor: pointer;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: "source-sans-pro", sans-serif;
+  font-weight: 300;
   &:active {
     color: #fff !important;
   };
@@ -73,23 +77,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-default .navbar-brand {
   font-family: 'P22FLLWTerracotta';
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 2.5rem;
-  text-shadow: 2px 1px 0px #000;  
-  -webkit-transition: all 0.50s ease-in-out;
-    -moz-transition: all 0.50s ease-in-out;
-    transition: all 0.50s ease-in-out;
-    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
-    transition-timing-function: ease-in-out;
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-    -webkit-transition: all 0.50s ease-in-out;
-    -moz-transition: all 0.50s ease-in-out;
-    transition: all 0.50s ease-in-out;
-    webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
-    transition-timing-function: ease-in-out;
+  margin-left: 20px !important;
+  font-size: 24px;
+}
+
+.navbar-default .navbrand-scroll {
+  color: #FFFFFF;
+   &:hover {
+    color: #F5F5F5;
     cusor: pointer;
   }
+}
+
+.navbar-default .navbrand-adjust-scroll {
+  color: #404040;
+   &:hover {
+    color: #111111;
+    cusor: pointer;
+  }
+}
+
+.hero-text-3 {
+  height: 100vh;
+  margin-top: -9px;
 }
 
 .collapse .navbar-collapse .fixed {
@@ -98,20 +108,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel-background {
    opacity: 1;
-   position: fixed; 
-   height: 100%;
+   height: 100vh;
    min-width: 100%;
    z-index: -1;
   }
   
  #carousel {
-   height: 100%;
-      background-image: #111111;
-
+  position: fixed;
+  height: 100vh;
+  padding-top: 3px;
  }
  
  .carousel-inner-background  {
-   height: 100%;
+   height: 100vh;
  }
 
  .carousel-fade {
@@ -156,11 +165,6 @@ h1, h2, h3, h4, h5, h6 {
   body {
   padding-top: 50px;
   }
-
-  .navbar-default {
-    background: rgba(0, 0, 0, 1.0);
-    border-color: 3px solid #000;
-  }
 }
 
 .ckeditor-image  {
@@ -187,4 +191,81 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #022145;
     margin-top: 30px;
     border-top: 15px solid #134D91;
+}
+
+.carousel.carousel-fit {
+  position: relative;
+  /* When sliding, use the maximum height we have */
+  /* Center horizontally the content of the slides */
+  /* To be centered, the images of the slides need to be inline */
+  /* Maximize the captions in the wrapper */
+}
+.carousel.carousel-fit.slide {
+  /* Hide the content outside the carousel when sliding */
+  overflow: hidden;
+}
+.carousel.carousel-fit .carousel-inner > .next,
+.carousel.carousel-fit .carousel-inner > .prev {
+  bottom: 0;
+}
+.carousel.carousel-fit .carousel-inner > .item {
+  text-align: center;
+}
+.carousel.carousel-fit .carousel-inner > .item > img {
+  display: inline-block;
+}
+.carousel.carousel-fit .carousel-inner > .item > .carousel-caption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal.modal-fullscreen {
+  /* Maximize the main wrappers on the screen */
+  /* Make the parent wrapper of the modal box a full-width block */
+  /* Remove borders and effects on the content */
+  /**
+   * /!\ By using this feature, you force the header and footer to be placed
+   * in an absolute position. You must handle by yourself the margin of the
+   * content.
+   */
+}
+.modal.modal-fullscreen .modal-dialog,
+.modal.modal-fullscreen .modal-content {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal.modal-fullscreen .modal-dialog {
+  margin: 0;
+  width: 100%;
+}
+.modal.modal-fullscreen .modal-content {
+  border: none;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inherit;
+  -moz-box-shadow: inherit;
+  -o-box-shadow: inherit;
+  box-shadow: inherit;
+}
+.modal.modal-fullscreen.force-fullscreen {
+  /* Remove the padding inside the body */
+}
+.modal.modal-fullscreen.force-fullscreen .modal-body {
+  padding: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header,
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header {
+  top: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+  bottom: 0;
 }

@@ -14,6 +14,7 @@ gem 'fog'
 gem 'friendly_id', '~> 5.1.0'
 gem 'unicorn'
 gem 'pg'
+gem 'meta-tags'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'

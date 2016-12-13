@@ -1,201 +1,195 @@
 <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-12 front-display">
-        <div class="animate-title text-center front-title ">Studio Carney</div>
-        <div class="animate-title text-center architecture-border">ARCHITECTURE</div>
-        <div class="animate-title text-center translating-front-text ">"Translating the language of architecture"</div>
-      </div>
-        <section>
-          <div class="col-md-12 arrow text-center">
-            <div class="glyphicon glyphicon-menu-down"></div>
-          </div>
-        </section>
-      <div class="front-mid">
-        <div class="col-sm-4 col-md-4 col-lg-4 col-adjust text-center">
-          <span class="latin text-center">m</span>
-          <h5 class="point-title">17 Years Experience</h5>
-          <p class="point-description">Single family and multi-family residential projects, retail, corporate office and public projects including storage facilities, banks, community centers and libraries.</p>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-adjust text-center">
-          <span class="latin text-center">K</span>
-          <h5 class="point-title">Collaboration</h5>
-          <p class="point-description">We believe each project should be a collaborative effort and work to include the Client in the design process.</p>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-adjust text-center">
-          <span class="latin text-center">m</span>
-          <h5 class="point-title">Vision</h5>
-          <p class="point-description">Our goal is to take your vision and apply our imagination and technical experience to help translate that into a built environment.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid latest-work">
-  <h1 class="text-center latest-work-header latest-animate">Latest Projects</h1>  
-  <div clas="row">
-  <% @design_group.each do |design| %>
-    <div class="col-sm-6 col-md-6 col-lg-6 latest-picture latest-animate">
-      <%= link_to design do %>
-        <%= image_tag(design.picture) %>
-        <h1 class="text-center latest-project-title"><%= design.title %></h1>
-      <% end %>
-    </div>
-    <% end %>
-  </div>
-</div> 
-
-<div class="container-fluid section-review">
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
   <div class="row">
-    <div class="media-body text-center">
-      <div class="col-sm-12 col-md-12 col-lg-12 col-adjust-mid">
-        <div id="carousel-example-generic" class="carousel carousel-fade slide" data-interval="20000" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <span class="latin-mid animate-review">X</span> 
-              <div class="front-testimonial animate-review"> 
-                Working with Michael brought us results that exceeded our expectations.  Michael listened to our needs, presented options and led us to decisions that maximized the use of our space and budget.  We couldn’t be more pleased with the end result and are the envy of all our friends when we show it off.I am pleased to recommend Michael Carney as an architect. My husband doesn’t want to hear about my next remodeling project, but I will be engaging Michael in the future for our next set of plans.<br> We love our new space!<br>~Patti
-              </div><br><br><br>
-            </div>
-            <div class="item ">
-              <span class="latin-mid animate-review">M</span>
-              <div class="front-testimonial animate-review">
-                I was lucky to have had Mike recommended when I was talking about my wish to add a master suite with a friend.  After an initial meeting about my wishes, he presented several different designs.  They were all beautiful and I really appreciated Mike's eye for detail. After choosing and tweaking a design together, we got to work.  Mike went above and beyond by personally helping me select components for the new bathroom.  He was always available for questions and concerns I had throughout the construction process.  He often came out to the site to check that the construction was being done to his satisfaction.  The end result is the master suite I dreamed of!
-              </div><br><br><br>
-            </div>
+    <div class="hero-text-3">
+      <div id="carousel" class="carousel carousel-background slide carousel-fade" data-interval="10000" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner carousel-inner-background" role="listbox">
+          <div class="item active picture">
+            <%= image_tag("bridge.jpg") %>
+          </div> 
+          <div class="item picture">
+            <%= image_tag("town-2.jpg") %> 
+          </div>
+          <div class="item picture">
+            <%= image_tag("tallbuildilng.jpg") %> 
+          </div>
+          <div class="item picture">
+            <%= image_tag("colosium.jpg") %> 
+          </div>
+          <div class="item picture">
+            <%= image_tag("town.jpg") %> 
+          </div>
+          <div class="item picture">
+            <%= image_tag("ally.jpg") %> 
+          </div>
+          <div class="item picture">
+            <%= image_tag("town.jpg") %> 
+          </div>
+          <div class="item picture">
+            <%= image_tag("bricks.jpg") %> 
+          </div>
+        </div>
+      </div>
+      <div class="front-display">
+        <div class="text-center front-title">
+          Studio Carney
+        </div>
+        <div class="text-center architecture-border">
+          ARCHITECTURE
+        </div>
+      </div>
+      <div class="front-display-2">
+        <div class="text-center translating-front-text ">
+          "Translating the language of architecture"
+        </div>
+      </div>
+      <div class="arrow text-center">
+        <div class="glyphicon glyphicon-menu-down">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row front-mid col-adjust col-adjust-img">
+    <h1 class="text-center" style="font-color: #404040">Recent Work</h1>
+    <br>
+    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+      <%= image_tag("1_6_Wilmette.jpg", {class: "showme"}) %>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center" id="show-modal" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+      <%= image_tag("4.jpg", {class: "showme"}) %>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center" id="show-modal" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+      <%= image_tag("Consult.jpg", {class: "showme"}) %>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center" id="show-modal" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+      <%= image_tag("LZ5.jpg", {class: "showme"}) %>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center" id="show-modal" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+      <%= image_tag("shower-froy.jpg", {class: "showme"}) %>
+    </div>
+    <div class="col-xs6 col-sm-4 col-md-2 col-lg-2 clearfix text-center" id="show-modal" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+      <%= image_tag("consult2.jpg", {class: "showme"}) %><span class="fixme"><%= fa_icon "eye" %></span>
+    </div>
+  </div>
+  <div class="row point-description-alpha">
+    <div class="point-description">
+      <p class="col-md-6 col-md-offset-3">We specialize in single family and multi-family residential projects, retail, corporate office and public projects including storage facilities, banks, community centers and libraries.  We believe each project should be a collaborative effort and work to include the Client in the design process. Our goal is to take your vision and apply our imagination and technical experience to help translate that into a built environment.  Studio Carney has worked on multiple residential projects located throughout the Country. They also worked on a variety of corporate projects, and were recently involved in an increasing number of commercial developments located in the Chicagoland area. Outside of Architecture.  Studio Carney currently holds an Architectural License in Illinois and Wisconsin.</p>
+    </div>
+  </div>
+  <div class="row services-offered">
+    <div class="services-offered-image">
+      <div class="services-offered-text text-center">
+        <div class="revieve-text">Working with Michael brought us results that exceeded our expectations.</div>
+        <div class="services-bullet">
+          <div class="text-center">
+            <h1>Services</h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <p>Feasibility Studies</p>
+            <p>Programming</p>
+            <p>Entitlement Services</p>
+            <p>Construction Phase Administration</p>
+            <p>Construction Specifications</p>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <p>Design</p>
+            <p>Bidding and Negotiation</p>
+            <p>Consultation Services</p>
+            <p>Due Diligence</p>
+            <p>Construction Documentation</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div id="myCarousel" class="hidden carousel slide carousel-fit" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag("shower-froy.jpg", {class: "active slide"}) %>
+        <div class="carousel-caption">
+          <h3>Master Bedroom, Bathroom Redmodel</h3>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag("consult2.jpg", {class: "slide"}) %>
+        <div class="carousel-caption">
+          <h3>Master Bedroom Addition</h3>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag("LZ5.jpg", {class: "slide"}) %>
+        <div class="carousel-caption">
+          <h3>Consulting Work</h3>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag("Consult.jpg", {class: "slide"}) %>
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag("4.jpg", {class: "slide"}) %>
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag("1_6_Wilmette.jpg", {class: "slide"}) %>
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    </div>
+
+    <div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
 </div>
-<%= render partial: 'hire_me' %>
-<script>
-  var animateFrontTitle = function() {
-    var revealFrontTitle = function() {
-      $(this).css({
-        opacity: 1,
-        transofmr: 'scaleX91) translateY(0)'
-      });
-    };
-
-    $.each($('.animate-title'), revealFrontTitle);
-};
-
- $(document).ready(function() {
-     if ($(window).height() > 50) {
-         animateFrontTitle();
-     }
-
-    var scrollDistance = $('.front-display').offset().top - $(window).height() + 200;
-     $(window).scroll(function(event) {
-         if ($(window).scrollTop() >= scrollDistance) {
-             animateFrontTitle();
-         }
-     });
-   });
-</script>
 
 <script>
-  var animatePoints = function() {
-      var revealPoint = function() {
-          $(this).css({
-              opacity: 1,
-              transform: 'scaleX(1) translateY(0)'
-          });
-      };
-
-      $.each($('.col-adjust'), revealPoint);
-  };
-     
-   $(document).ready(function() {
-       if ($(window).height() > 950) {
-           animatePoints();
-       }
-              
-       var scrollDistance = $('.front-mid').offset().top - $(window).height() + 200;
-       $(window).scroll(function(event) {
-           if ($(window).scrollTop() >= scrollDistance) {
-               animatePoints();
-           }
-       });
-   });
+$(window).load(function(){
+  $(".showme").click(function(){
+    $('#myCarousel').removeClass('hidden');
+  });
+  $(".close").click(function(){
+    $('#myCarousel').addClass('hidden')
+    location.reload();
+  });
+  $(".btn-default").click(function(){
+    $('#myCarousel').addClass('hidden')
+     location.reload();
+  });
+});
 </script>
 
-<script>
-  var animateReview = function() {
-      var revealReview = function() {
-          $(this).css({
-              opacity: 1,
-              transform: 'scaleX(1) translateY(0)'
-          });
-      };
-
-      $.each($('.animate-review'), revealReview);
-  };
-     
-   $(document).ready(function() {
-       if ($(window).height() > 950) {
-           animateReview();
-       }
-              
-       var scrollDistance = $('.section-review').offset().top - $(window).height() + 200;
-       $(window).scroll(function(event) {
-           if ($(window).scrollTop() >= scrollDistance) {
-               animateReview();
-           }
-       });
-   });
-</script>
-<script>
-  var animateLatestWork = function() {
-      var revealLatestWork = function() {
-          $(this).css({
-              opacity: 1,
-              transform: 'scaleX(1) translateY(0)'
-          });
-      };
-
-      $.each($('.latest-animate'), revealLatestWork);
-  };
-     
-   $(document).ready(function() {
-       if ($(window).height() > 950) {
-           animateLatestWork();
-       }
-              
-       var scrollDistance = $('.latest-work').offset().top - $(window).height() + 200;
-       $(window).scroll(function(event) {
-           if ($(window).scrollTop() >= scrollDistance) {
-               animateLatestWork();
-           }
-       });
-   });
-</script>
-<script>
-  var animateArrow = function() {
-    var revealArrow = function() {
-      $(this).css({
-        opacity:0
-      });
-    };
-
-    $.each($('.glyphicon'), revealArrow);
-};
-
-   $(document).ready(function() {
-              
-       var scrollDistance = $('.arrow').offset().top - $(window).height() + 200;
-       $(window).scroll(function(event) {
-           if ($(window).scrollTop() >= scrollDistance) {
-               animateArrow();
-           }
-       });
-   });
-</script>

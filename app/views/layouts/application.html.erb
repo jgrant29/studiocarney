@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Studio Carney | Architecture </title>
+  <title>Studio Carney | Architecture</title>
+  <%= display_meta_tags site: 'Studio Carney | Architecture' %>
   <%= favicon_link_tag 'favicon.ico' %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>  <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -10,7 +11,7 @@
 </head>
 <body>
   <section class="container-fluid-dark">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-adjust">
         <div class="container-fluid">
 
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -21,7 +22,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Studio Carney</a>
+          <a class="navbar-brand navbrand-scroll" href="/">STUDIO CARNEY</a>
         </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,60 +48,6 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-
-  <div id="carousel" class="carousel carousel-background slide carousel-fade" data-interval="10000" data-ride="carousel">
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner carousel-inner-background" role="listbox">
-      <div class="item active picture">
-        <%= image_tag("bridge.jpg") %>
-      </div> 
-      <div class="item picture">
-        <%= image_tag("stoplight.jpg") %> 
-      </div> 
-      <div class="item picture">
-        <%= image_tag("studio2.jpg") %>
-      </div> 
-      <div class="item picture">
-        <%= image_tag("building-4.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("roma-1.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("town-2.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("tallbuildilng.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("colosium.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("house.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("Florence.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("c7e5fed190e736fecd03fe286dfd57b3.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("ally.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("light.jpg") %>
-      </div>
-      <div class="item picture">
-        <%= image_tag("town.jpg") %> 
-      </div>
-      <div class="item picture">
-        <%= image_tag("bricks.jpg") %> 
-      </div>
-    </div>
-  </div>
-  </div>
-
   <%= yield %>
   <%= render partial: 'welcome/footer' %>
 </section>
@@ -108,10 +55,20 @@
 </html>
 
 <script>
-var randomSlide = Math.floor(Math.random() * $('#carousel .carousel-inner div').size());
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
 
-jQuery(document).ready(function($) {
-$('#carousel').carousel(randomSlide);
-$('#carousel').carousel('next');
-});
+    if (scroll >= 150) {
+      $(".navbar-default").removeClass("navbar-adjust")
+      $(".navbar-brand").removeClass("navbar-adjust")
+      $(".navbar-brand").removeClass("navbrand-scroll")
+      $(".navbar-brand").addClass("navbrand-adjust-scroll")
+    } else {
+      $(".navbar-default").addClass("navbar-adjust")
+      $(".navbar-default").removeClass("navbar-adjust-scroll")
+      $(".navbar-brand").removeClass("navbrand-adjust-scroll")
+      $(".navbar-brand").addClass("navbrand-scroll")
+    }
+  });
 </script>
+
