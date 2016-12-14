@@ -9,32 +9,43 @@
 }
 
 .services-offered-image {
-  background-color: #404040;
+  background: #FFFFFF;
   height: inherit;
 
 }
 
 
 .services-offered-text {
-  background-color: #FF851B;
+  background-color: #404040;
   padding-top: 5rem;
   padding-top: 5rem;
-  color: #404040;
+  border-top: 1px solid #FFFFFF;
+  color: #FFFFFF;
   font-size: 42px;
   line-height: 2;
 }
 
 .services-bullet {
-  background-color: #505050;
-  padding-top: 10rem;
-  color: #FFFFFF;
+  background: #FFFFFF;
+  padding-top: 4rem;
+  color: #404040;
+  margin-bottom: 10rem;
+  border-top: 1px solid #AAAAAA;
 }
 
 .review-text {
   padding-bottom: 2rem;
   font-size: 50px;
   vertical-align: center;
-  text-align: center;
+}
+
+.review-text-bullet {
+  font-size: 30px;
+  color: #404040;
+  text-align: left;
+  p {
+    border-bottom: 1px solid #DDDDDD;
+  }
 }
 
 .modal.modal-fullscreen .modal-content {
@@ -174,17 +185,17 @@
  -webkit-box-shadow: 4px -4px 4px 3px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    4px -4px 4px 3px rgba(50, 50, 50, 0.75);
   box-shadow:         4px -4px 4px 3px rgba(50, 50, 50, 0.75);
-  background-color: #505050;
+  background: #FFFFFF;
+  border-bottom: 1px solid #404040;
   height: auto;
   margin-top: 9px;
-  color: #FFFFFF;
+  color: #404040;
   padding-bottom: 5rem;
 }
 
 .col-adjust-img {
   img { 
-    -webkit-filter: grayscale(2);
-    filter: grayscale(2);
+    border: 1px solid #DDDDDD;
     border-radius: 100%;
     color: rgba(0, 0, 0, .9);
     object-fit: cover;
@@ -194,8 +205,6 @@
     z-index: -2;
 
     &:hover {
-    -webkit-filter: grayscale(2);
-    filter: grayscale(0);
 
       color: rgba(0, 0, 0, .1);
       cursor: pointer;
@@ -315,7 +324,7 @@
 }
 
 .point-description-alpha {
-  background-color: #404040;
+  background-color: #AAAAAA;
   height: auto;
   padding-bottom: 5rem;
 }
@@ -324,7 +333,7 @@
   margin-top: 5rem;
   padding: 15px;
   font-family: 'Open Sans', sans-serif;
-  color: #FFFFFF;
+  color: #404040;
   font-size: 22px;
   line-height: 1.75;
 }
