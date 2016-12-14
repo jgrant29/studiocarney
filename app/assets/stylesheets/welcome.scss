@@ -547,7 +547,7 @@
 @media (max-width: 480px) {
 
   .architecture-border {
-    letter-spacing: 14px;
+    letter-spacing: 20px;
   }
 
   .latin {
@@ -562,6 +562,10 @@
   .latin-mid {
     font-size: 10rem;
   }
+  .carousel.carousel-fit.slide {
+    margin-top: 50% !important;
+  }
+
 }
 
 @media (min-width: 1020px) {
