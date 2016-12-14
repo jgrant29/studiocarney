@@ -14,6 +14,7 @@
 
 }
 
+
 .services-offered-text {
   background-color: #FF851B;
   padding-top: 5rem;
@@ -24,9 +25,16 @@
 }
 
 .services-bullet {
-  background-color: #404040;
+  background-color: #505050;
   padding-top: 10rem;
   color: #FFFFFF;
+}
+
+.review-text {
+  padding-bottom: 7rem;
+  font-size: 65px;
+  vertical-align: center;
+  text-align: center;
 }
 
 .modal.modal-fullscreen .modal-content {
@@ -163,7 +171,10 @@
 }
 
 .col-adjust {
-  background-color: #FFFFFF;
+ -webkit-box-shadow: 4px -4px 4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    4px -4px 4px 3px rgba(50, 50, 50, 0.75);
+  box-shadow:         4px -4px 4px 3px rgba(50, 50, 50, 0.75);
+  background-color: #505050;
   height: auto;
   margin-top: 9px;
   padding-bottom: 5rem;
@@ -171,6 +182,9 @@
 
 .col-adjust-img {
   img { 
+    -webkit-filter: grayscale(2);
+    filter: grayscale(2);
+    border-radius: 100%;
     color: rgba(0, 0, 0, .9);
     object-fit: cover;
     height: 135px;
@@ -179,6 +193,9 @@
     z-index: -2;
 
     &:hover {
+    -webkit-filter: grayscale(2);
+    filter: grayscale(0);
+
       color: rgba(0, 0, 0, .1);
       cursor: pointer;
     };    
@@ -571,10 +588,45 @@
   }
 
 }
-
-@media (min-width: 1020px) {
-
+@media (min-width: 1060px) {
+  .col-adjust-img {
+    img { 
+      height: 160px;
+      width: 160px;  
+    }
+  }
 }
+@media (min-width: 1190px) {
+  .col-adjust-img {
+    img { 
+      height: 180px;
+      width: 180px;  
+    }
+  }
+}
+
+@media (min-width: 1310px) {
+  .col-adjust-img {
+    img { 
+      height: 200px;
+      width: 200px;  
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .col-adjust-img {
+    img { 
+      height: 235px;
+      width: 235px;  
+    }
+  }
+}
+
+
+
+
+
 
 .arrow  {
   position: absolute;
