@@ -50,6 +50,10 @@
   bottom: 0;
 }
 
+.carousel.carousel-fit.slide {
+  margin-top: 10% !important;
+}
+
 .fixme {
   display: none !important;
   top: 40%;
@@ -169,8 +173,8 @@
   img { 
     color: rgba(0, 0, 0, .9);
     object-fit: cover;
-    height: 165px;
-    width: 165px;
+    height: 135px;
+    width: 135px;
     margin-bottom: 2rem;
     z-index: -2;
 

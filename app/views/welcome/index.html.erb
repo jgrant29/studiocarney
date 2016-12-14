@@ -105,75 +105,81 @@
       </div>
     </div>
   </div>
-  <div id="myCarousel" class="hidden carousel slide carousel-fit" data-ride="carousel">
+</div>
+<div class="container">
+  <div class="row">
+    <div class="colxs-12">
+      <div id="myCarousel" class="hidden carousel slide carousel-fit" data-ride="carousel">
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <%= image_tag("shower-froy.jpg", {class: "active slide"}) %>
-        <div class="carousel-caption">
-          <h3>Master Bedroom, Bathroom Redmodel</h3>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item">
+            <%= image_tag("shower-froy.jpg", {class: "slide"}) %>
+            <div class="carousel-caption">
+              <h3>Master Bedroom, Bathroom Redmodel</h3>
+            </div>
+          </div>
+          <div class="item active">
+            <%= image_tag("consult2.jpg", {class: "slide active"}) %>
+            <div class="carousel-caption">
+              <h3>Master Bedroom Addition</h3>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("LZ5.jpg", {class: "slide"}) %>
+            <div class="carousel-caption">
+              <h3>Consulting Work</h3>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("Consult.jpg", {class: "slide"}) %>
+            <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("4.jpg", {class: "slide"}) %>
+            <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("1_6_Wilmette.jpg", {class: "slide"}) %>
+            <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="item">
-        <%= image_tag("consult2.jpg", {class: "slide"}) %>
-        <div class="carousel-caption">
-          <h3>Master Bedroom Addition</h3>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
         </div>
-      </div>
-      <div class="item">
-        <%= image_tag("LZ5.jpg", {class: "slide"}) %>
-        <div class="carousel-caption">
-          <h3>Consulting Work</h3>
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("Consult.jpg", {class: "slide"}) %>
-        <div class="carousel-caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("4.jpg", {class: "slide"}) %>
-        <div class="carousel-caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("1_6_Wilmette.jpg", {class: "slide"}) %>
-        <div class="carousel-caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
+
+        <div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" style="color: #FFFFFF" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
     </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-    </div>
-
-    <div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>One fine body…</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+  </div>
 
 </div>
 
@@ -184,11 +190,9 @@ $(window).load(function(){
   });
   $(".close").click(function(){
     $('#myCarousel').addClass('hidden')
-    location.reload();
   });
   $(".btn-danger").click(function(){
     $('#myCarousel').addClass('hidden')
-     location.reload(true);
   });
 });
 </script>
