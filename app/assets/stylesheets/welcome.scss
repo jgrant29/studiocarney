@@ -5,7 +5,7 @@
 }
 
 .services-offered {
-  height: 150rem;
+  height: 100rem;
 }
 
 .services-offered-image {
@@ -531,6 +531,10 @@
 }
 
 @media (max-width: 540px) {
+  .services-offered {
+    height: auto;
+    padding-bottom: 10rem !important;
+  }
   .front-title {
     font-size: 22px;
   }
