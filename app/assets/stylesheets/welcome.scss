@@ -190,6 +190,8 @@
 
 .col-adjust-img {
   img { 
+    -webkit-filter: grayscale(0);
+    filter: grayscale(1);
     border: 1px solid #DDDDDD;
     border-radius: 100%;
     color: rgba(0, 0, 0, .9);
@@ -200,7 +202,8 @@
     z-index: -2;
 
     &:hover {
-
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
       color: rgba(0, 0, 0, .1);
       cursor: pointer;
     };    
