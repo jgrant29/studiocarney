@@ -1,6 +1,5 @@
 .body-design {
-  min-height: 100rem;
-  margin-bottom: -20px;
+  background-color: #FFFFFF;
 }
 
 .body-design-show {
@@ -9,13 +8,6 @@
 }
 
 .design-title {
-  font-family: 'P22FLLWTerracotta';
-  color: #fff;
-  font-size: 10rem;
-  text-shadow: 2px 1px 0px #000;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  border-bottom: 1px solid #FFFFFF;
 
 }
 
@@ -28,6 +20,23 @@
   font-family: "Helvetica, Ariel";
   padding-top: 50px;
   background-color: #fff;
+}
+
+.design-image {
+  margin: 7rem;
+    img {
+    margin: 1rem;
+    border: 5px solid #DDDDDD;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.design-thumbnail {
+  img {
+    height: 100px !important;
+  }
 }
 
 .thumbnail-modified {
@@ -138,16 +147,13 @@
   vertical-align: center;
 }
 
-/*.design-background {
-  background-image: image_url("Piazza.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 280px;
-  border: 5px solid #fff;
-  margin-left: -15px;
-  margin-right: -15px;
-}*/
+.design-background {
+  img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+}
 
 /*.design-background-show {
   background-image: image_url("town-2.jpg");
@@ -193,7 +199,7 @@
 }
 
 .design-description-show h1, h2, h3, h4, h5{
-  color: #fff;
+  color: #404040;
 } 
 
 .design-description-show img {

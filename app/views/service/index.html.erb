@@ -1,29 +1,43 @@
-<div class="services">
-  <div class="text-center services-header">
-    <span class="design-frank-text">6</span>Services<span class="design-frank-text">6</span>
-  </div>
+<%= display_meta_tags site: 'Studio Carney Architecture | Services' %>
 
-  <div class="container-fluid">
+<div class="container-fluid services">
+  <div class="row">
+    <div class="design-background">
+      <%= image_tag "town-2.jpg" %>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
     <div class="row">
-      <div class="col-xs-6 text-center services-bullet">
+      <div class="col-xs-12">
+        <h1 class="text-muted">Architectural Services by Studio Carney</h1>
+        <p class="lead">The language of Architecture can be a difficult one to understand. At Studio Carney Architecture, we pride ourselves in helping translate the language of Architecture into something less intimidating. Designing a home, an office or even something as small as a deck, should be a fun and creative experience.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row"> 
+      <div class="col-xs-6">
         <ul>
-          <p>Feasibility Studies</p>
-          <p>Programming</p>
-          <p>Entitlement Services</p>
-          <p>Construction Phase Administration</p>
+          <h1 class="text-muted">Feasibility Studies</h1>
+          <h1 class="text-muted">Programming</h1>
+          <h1 class="text-muted">Entitlement Services</h1>
+          <h1 class="text-muted">Construction Phase Administration</h1>
+          <h1 class="text-muted">Construction Specifications</h1>
         </ul>
       </div>
-      <div class="col-xs-6 text-center services-bullet">
+      <div class="col-xs-6">
         <ul>
-          <p>Design</p>
-          <p>Bidding and Negotiation</p>
-          <p>Consultation Services</p>
-          <p>Due Diligence</p>
-          <p>Construction Documentation and Specifications</p>
+          <h1 class="text-muted">Design</h1>
+          <h1 class="text-muted">Bidding and Negotiation</h1>
+          <h1 class="text-muted">Consultation Services</h1>
+          <h1 class="text-muted">Due Diligence</h1>
+          <h1 class="text-muted">Construction Documentation</h1>
         </ul>
       </div>
     </div>
+    <br>
+      <br>
+      <%= link_to "Contact Us", new_contact_path, class: "btn btn-default col-xs-6 col-xs-offset-3" %>
   </div>
 </div>
-
-<%= render partial: 'welcome/hire_me' %>

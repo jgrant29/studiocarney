@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="myCarousel1" class="hidden carousel slide carousel-fit" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag("reitan_consulting/design-service-reitan architects.jpg", {class: "slide active"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("reitan_consulting/LZ7.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("reitan_consulting/LZ6.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("reitan_consulting/LZ3.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("reitan_consulting/LZ1.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("reitan_consulting/LZ4.jpg", {class: "slide"}) %>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        </div>
+
+        <div class="modal fade modal-fullscreen force-fullscreen" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" style="color: #FFFFFF" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div>
+  </div>
+
+</div>
+
+<script>
+$(window).load(function(){
+  $(".showme1").click(function(){
+    $('#myCarousel1').removeClass('hidden');
+  });
+  $(".close").click(function(){
+    $('#myCarousel1').addClass('hidden')
+  });
+  $(".btn-danger").click(function(){
+    $('#myCarousel1').addClass('hidden')
+  });
+});
+</script>

@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="myCarousel" class="hidden carousel slide carousel-fit" data-ride="carousel">
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag("lake_house/ElevB_2.jpg", {class: "slide active"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("lake_house/ElevB_1.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("lake_house/LAKEHOUSE MAIN", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("lake_house/LAKEHOUSE upper", {class: "slide"}) %>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        </div>
+
+        <div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" style="color: #FFFFFF" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div>
+  </div>
+
+</div>
+
+<script>
+$(window).load(function(){
+  $(".showme").click(function(){
+    $('#myCarousel').removeClass('hidden');
+  });
+  $(".close").click(function(){
+    $('#myCarousel').addClass('hidden')
+  });
+  $(".btn-danger").click(function(){
+    $('#myCarousel').addClass('hidden')
+  });
+});
+</script>

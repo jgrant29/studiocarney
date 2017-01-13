@@ -1,5 +1,15 @@
-<section class="container-fluid contact-body">
-  <h1 class="hero-contact">Contact us</h1><hr>
+<%= display_meta_tags site: 'Studio Carney Architecture | Contact Us' %>
+
+<div class="container-fluid services">
+  <div class="row">
+    <div class="design-background">
+      <%= image_tag "c7e5fed190e736fecd03fe286dfd57b3.jpg" %>
+    </div>
+  </div>
+  <div class="container contact-body">
+  <h1 class="text-muted">Contact us</h1>
+  <hr>
+  <br>
     <div class="col-md-4">
       <div class="contact-us">We look forward to hearing from you</div><br>
       <ul>
@@ -10,15 +20,12 @@
     <div class="col-md-8 ">
       <div class="form-group">
         <%= form_for @contact do |f| %>
-          <%= f.label :name, class: "form-control-text" %><br>
           <%= f.text_field :name, required: true, class: 'form-control', placeholder: "Enter your name" %>
         </div>
         <div class="form-group">
-          <%= f.label :email, class: "form-control-text" %><br>
           <%= f.email_field :email, required: true, class: 'form-control', placeholder: "Enter your email address" %>
         </div>
         <div class="form-group">
-          <%= f.label :message, class: "form-control-text" %><br>
           <%= f.text_area :message, as: :text, required: true, class: 'form-control', rows: 8, placeholder: "Enter your message here" %>
         </div>
         <div class="hidden">

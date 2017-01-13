@@ -1,9 +1,13 @@
+<%= display_meta_tags site: 'Studio Carney Architecture | Welcome' %>
 <div class="container-fluid">
   <div class="row">
     <div class="hero-text-3">
       <div id="carousel" class="carousel carousel-background slide carousel-fade" data-interval="10000" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner carousel-inner-background" role="listbox">
+          <div class="item active picture">
+            <%= image_tag("stoplight.jpg") %>
+          </div> 
           <div class="item active picture">
             <%= image_tag("bridge.jpg") %>
           </div> 
@@ -49,149 +53,10 @@
       </div>
     </div>
   </div>
-  <div class="row front-mid col-adjust col-adjust-img">
-    <br>
-    <span type="button" class="visible-xs showme text-center btn btn-default" data-toggle="modal" data-target="#myModal" style="font-size:25px;"data-local="#myCarousel">View Slide Show</span>
-    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-      <div data-toggle="modal" data-target="#myModal" data-local="#myCarousel"><%= image_tag("1_6_Wilmette.jpg", {class: "showme"}) %></div>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-      <div data-toggle="modal" data-target="#myModal" data-local="#myCarousel"><%= image_tag("4.jpg", {class: "showme"}) %></div>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-      <div data-toggle="modal" data-target="#myModal" data-local="#myCarousel"><%= image_tag("Consult.jpg", {class: "showme"}) %></div>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-      <div data-toggle="modal" data-target="#myModal" data-local="#myCarousel"><%= image_tag("LZ5.jpg", {class: "showme"}) %></div>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-      <div data-toggle="modal" data-target="#myModal" data-local="#myCarousel"><%= image_tag("shower-froy.jpg", {class: "showme"}) %></div>
-    </div>
-    <div class="col-xs6 col-sm-4 col-md-2 col-lg-2 clearfix text-center">
-      <div data-toggle="modal" data-target="#myModal" data-local="#myCarousel"><%= image_tag("consult2.jpg", {class: "showme"}) %></div><span class="fixme"><%= fa_icon "eye" %></span>
-    </div>
-  </div>
   <div class="row point-description-alpha">
     <div class="point-description">
-      <h4 class="text-center">About Studio Carney</h4>
-      <hr>
-      <p class="col-md-8 col-md-offset-2">We specialize in single family and multi-family residential projects, retail, corporate office and public projects including storage facilities, banks, community centers and libraries.  We believe each project should be a collaborative effort and work to include the Client in the design process. Our goal is to take your vision and apply our imagination and technical experience to help translate that into a built environment.  Studio Carney has worked on multiple residential projects located throughout the Country. They also worked on a variety of corporate projects, and were recently involved in an increasing number of commercial developments located in the Chicagoland area. Outside of Architecture.  Studio Carney currently holds an Architectural License in Illinois and Wisconsin.</p>
+      <p class="col-md-8 col-md-offset-2 lead">We specialize in single family and multi-family residential projects, retail, corporate office and public projects including storage facilities, banks, community centers and libraries.  We believe each project should be a collaborative effort and work to include the Client in the design process. Our goal is to take your vision and apply our imagination and technical experience to help translate that into a built environment.  Studio Carney has worked on multiple residential projects located throughout the Country. They also worked on a variety of corporate projects, and were recently involved in an increasing number of commercial developments located in the Chicagoland area. Outside of Architecture.  Studio Carney currently holds an Architectural License in Illinois and Wisconsin.<br><br><%= link_to "The Studio Carney Portfolio", designs_path, class: "btn btn-default col-xs-6 col-xs-offset-3" %></p><br>
     </div>
   </div>
-<!--   <div class="row services-offered">
-    <div class="services-offered-image">
-      <div class="services-offered-text text-center">
-        <div class="services-bullet">
-          <p class="review-text">Services by Studio Carney</p>
-          <div class="col-sm-4 col-md-4 col-sm-offset-2 col-md-offset-2 review-text-bullet">
-            <br>
-            <p>Feasibility Studies</p>
-            <p>Programming</p>
-            <p>Entitlement Services</p>
-            <p>Construction Phase Administration</p>
-            <p>Construction Specifications</p>
-          </div>
-          <div class="col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-1 review-text-bullet">
-            <br>
-            <p>Design</p>
-            <p>Bidding and Negotiation</p>
-            <p>Consultation Services</p>
-            <p>Due Diligence</p>
-            <p>Construction Documentation</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </div>
-<div class="container">
-  <div class="row">
-    <div class="colxs-12">
-      <div id="myCarousel" class="hidden carousel slide carousel-fit" data-ride="carousel">
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item">
-            <%= image_tag("shower-froy.jpg", {class: "slide"}) %>
-            <div class="carousel-caption">
-              <h3>Master Bedroom, Bathroom Redmodel</h3>
-            </div>
-          </div>
-          <div class="item active">
-            <%= image_tag("consult2.jpg", {class: "slide active"}) %>
-            <div class="carousel-caption">
-              <h3>Master Bedroom Addition</h3>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag("LZ5.jpg", {class: "slide"}) %>
-            <div class="carousel-caption">
-              <h3>Consulting Work</h3>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag("Consult.jpg", {class: "slide"}) %>
-            <div class="carousel-caption">
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag("4.jpg", {class: "slide"}) %>
-            <div class="carousel-caption">
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag("1_6_Wilmette.jpg", {class: "slide"}) %>
-            <div class="carousel-caption">
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        </div>
-
-        <div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" style="color: #FFFFFF" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <p>One fine body…</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
-    </div>
-  </div>
-
-</div>
-
-<script>
-$(window).load(function(){
-  $(".showme").click(function(){
-    $('#myCarousel').removeClass('hidden');
-  });
-  $(".close").click(function(){
-    $('#myCarousel').addClass('hidden')
-  });
-  $(".btn-danger").click(function(){
-    $('#myCarousel').addClass('hidden')
-  });
-});
-</script>
 
