@@ -18,7 +18,39 @@
     <br>
     <hr>
   </div>
-</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="design-image">
+        <div class="col-md-6">
+          <div data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+            <%= image_tag("ElevB_2.jpg", {class: "showme"}) %>
+          </div>
+        </div>
+        <div class="col-md-6 design-title">
+          <h1 class="text-muted">Rein-visioning a lake house on Long Lake - Coming soon</h1>
+          <p class="lead">We're currently working with a Husband and Wife team to rejuvenate their lake home on the shores of Long Lake. We're opening up walls allowing for unobstructed views of the lake. We're also redesigning the second floor so they, their children and grandchildren can comfortably use the home for many years to come. We look forward to working with the family develop a life long playhouse for the family to enjoy! </p>
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+                <%= image_tag("ElevB_1.jpg", {class: "showme"}) %>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+                <%= image_tag("LAKEHOUSE MAIN", {class: "showme"}) %>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+                <%= image_tag("LAKEHOUSE upper", {class: "showme"}) %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+<%= render partial: "lakehouse" %>
 
 
