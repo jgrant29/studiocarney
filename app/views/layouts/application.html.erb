@@ -61,17 +61,23 @@
 <script>
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
+    var wide = $(window).width()
 
-    if (scroll >= 150) {
+    if (scroll >= 150 && wide >= 768) {
       $(".navbar-default").removeClass("navbar-adjust")
       $(".navbar-brand").removeClass("navbar-adjust")
       $(".navbar-brand").removeClass("navbrand-scroll")
       $(".navbar-brand").addClass("navbrand-adjust-scroll")
-    } else {
+    } else if (wide >= 768) {
       $(".navbar-default").addClass("navbar-adjust")
       $(".navbar-default").removeClass("navbar-adjust-scroll")
       $(".navbar-brand").removeClass("navbrand-adjust-scroll")
       $(".navbar-brand").addClass("navbrand-scroll")
+    } else if (winde < 768) {
+      $(".navbar-default").removeClass("navbar-adjust")
+      $(".navbar-brand").removeClass("navbar-adjust")
+      $(".navbar-brand").removeClass("navbrand-scroll")
+      $(".navbar-brand").addClass("navbrand-adjust-scroll")
     }
   });
 </script>
