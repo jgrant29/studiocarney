@@ -17,6 +17,7 @@ gem 'meta-tags'
 gem 'puma'
 gem 'heroku-deflater', :group => :production
 gem 'rack-cache'  
+gem 'sitemap_generator'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
