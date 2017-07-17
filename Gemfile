@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
+ruby '2.4.0'
 
 gem 'bootstrap-sass'
 gem 'ckeditor'
@@ -12,12 +12,14 @@ gem "font-awesome-rails"
 gem 'mail_form'
 gem 'fog'
 gem 'friendly_id', '~> 5.1.0'
-gem 'unicorn'
 gem 'pg'
 gem 'meta-tags'
+gem 'puma'
+gem 'heroku-deflater', :group => :production
+gem 'rack-cache'  
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.2'
+gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'rails_12factor'

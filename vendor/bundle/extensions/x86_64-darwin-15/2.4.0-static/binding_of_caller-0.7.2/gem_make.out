@@ -1,0 +1,16 @@
+current directory: /Users/justinMgrant/code/studiocarney/vendor/bundle/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+/Users/justinMgrant/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170717-54490-ro60xk.rb extconf.rb
+
+current directory: /Users/justinMgrant/code/studiocarney/vendor/bundle/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/justinMgrant/code/studiocarney/vendor/bundle/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /Users/justinMgrant/code/studiocarney/vendor/bundle/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.

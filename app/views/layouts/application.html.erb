@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <%= favicon_link_tag 'stoplight2.jpg' %>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>  
-  <%= stylesheet_link_tag 'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-  <%= display_meta_tags description: 'Our firm is based on the principal that each project begins with the vision of the Client. Our goal is to take your vision and apply our imagination and technical experience to help translate that into a built environment. We believe each project should be a collaborative effort and work to include the Client in the design process.' %>
-  <%= display_meta_tags keywords: ["Architecture", "Palatine", "Illinois", "Studio Carney", "Chicago", "Home Remodel", "Feasibility Studies", "Entitlement Services", "Construction Phase Administration", "Construction Specifications", "Design Bidding and Negotiation", "Consultation Services Construction Documentation"] %>
-  <%= display_meta_tags separator: "&mdash;".html_safe %>
-  <meta name="robots" content="NOODP">
-  <meta name="google" content="nositelinkssearchbox" />
+<html itemscope itemtype="http://schema.org/HomeAndConstructionBusiness">
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We specialize in single family and multi-family residential projects, retail, corporate office and public projects including storage facilities, banks, community centers and libraries.">
+    <meta name="keywords" content="Architecture Palatine Illinois, Architecture Barrington Illinois, Design, Renovation, Bath, Bedroom, Palatine, Barrington, Residential, Commercial, Retail, Living, Remodel, Addition, Green, Space Planning, Age in Place, Mobility, Accessibility, Creative, Responsive Process">
+    <%= favicon_link_tag('stoplight2.jpg', rel: "icon") %>
+    <%= favicon_link_tag('stoplight2.jpg', rel: "apple-touch-icon") %>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Translating the language of architecture" />
+    <meta name="twitter:description" content="We specialize in single family and multi-family residential projects, retail, corporate office and public projects including storage facilities, banks, community centers and libraries." />
+    <meta property="og:title" content="Translating the language of architecture" />
+    <meta property="og:url" content="https://www.studiocarney.com" />
+    <meta name="application-name" content="Studio Carney"/>
+    <meta name="msapplication-TileColor" content="#404040"/>
+    <meta name="apple-mobile-web-app-title" content="StudioCarney">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>  
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <%= display_meta_tags separator: "&mdash;".html_safe %>
+    <meta name="robots" content="follow">
+    <meta name="google" content="nositelinkssearchbox" />
 </head>
 <body>
+    <span class="hidden hidden-sc"itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+      <div itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+        <span itemprop="name">Architecture Palatine Illinois, Architecture Barrington Illinois, Design, Renovation, Bath, Bedroom, Palatine, Barrington, Residential, Commercial, Retail, Living, Remodel, Addition, Green, Space Planning, Age in Place, Mobility, Accessibility, Creative, Responsive Process</span>
+      </div>
+    </span>
   <section class="container-fluid-dark">
     <nav class="navbar navbar-default navbar-fixed-top navbar-adjust">
         <div class="container-fluid">
@@ -26,7 +42,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand navbrand-scroll" href="/">Studio Carney</a>
+          <span itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness">
+            <a itemprop="name" class="navbar-brand navbrand-scroll" href="/">Studio Carney</a>
+          </span>
         </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
