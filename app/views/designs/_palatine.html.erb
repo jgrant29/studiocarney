@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="myCarousel7" class="hidden carousel slide carousel-fit" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag("DSC_7807.jpg", {class: "slide active"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("DSC_7804.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("DSC_7803.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("DSC_7826.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("DSC_7837.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("DSC_7817.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("DSC_7835.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("DSC_7808.jpg", {class: "slide"}) %>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel7" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel7" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        </div>
+
+        <div class="modal fade modal-fullscreen force-fullscreen" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModal7Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" style="color: #FFFFFF" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div>
+  </div>
+
+</div>
+
+<script>
+$(window).load(function(){
+  $(".showme7").click(function(){
+    $('#myCarousel7').removeClass('hidden');
+  });
+  $(".close").click(function(){
+    $('#myCarousel7').addClass('hidden')
+  });
+  $(".btn-danger").click(function(){
+    $('#myCarousel7').addClass('hidden')
+  });
+});
+</script>
