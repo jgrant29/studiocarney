@@ -1,14 +1,16 @@
-<%= display_meta_tags site: 'Studio Carney Architecture | Welcome' %>
+<% @title = "Studio Carney Architecture | Welcome" %>
+<meta name="description" content="<%= @seo_description = "As an architect in Palatine, Illinois, we specialize in single family and multi-family residential projects, retail, corporate office and public projects including storage facilities, banks, community centers and libraries" %>">
+<meta name="keywords" content="<%= @seo_keyword = "Architect Palatine Illinois, Architect in Wisconsin, Architect in Missouri, Architect in Barrington Illinois" %>">
 <div class="container-fluid">
   <div class="row">
     <div class="hero-text-3">
-      <div id="carousel" class="carousel carousel-background slide carousel-fade" data-interval="10000" data-ride="carousel">
+      <div id="carousel" class="carousel carousel-background slide carousel-fade" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner carousel-inner-background" role="listbox">
           <div class="item active picture">
             <%= image_tag("stoplight.jpg") %>
           </div> 
-          <div class="item active picture">
+          <div class="item picture">
             <%= image_tag("bridge.jpg") %>
           </div> 
           <div class="item picture">
@@ -47,28 +49,10 @@
           "Translating the language of architecture"
         </div>
       </div>
-      <div class="arrow text-center">
+<!--       <div class="arrow text-center">
         <div class="glyphicon glyphicon-menu-down">
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="row point-description-alpha">
-    <div class="point-description">
-      <p class="col-md-8 col-md-offset-2 lead">Studio Carney Architecture, Inc. was started out of a desire to work closer with our clients to collaboratively achieve their vision. With our team nearing 20 years of experience, we have developed the techniques to provide an adaptive approach to design challenges large and small. Our experience includes large, medium and small corporate projects, municipal library renovations, commercial and residential development as well as a wide variety of residential renovations, remodels and additions.  
-      <br>
-      <br>
-      We are currently licensed in Illinois, Wisconsin and Missouri.
-      <br> 
-      <br> 
-      We look forward to working with you implement your dream! 
-      <br>
-      <br>
-      <a href="https://www.linkedin.com/in/michael-carney-ncarb-ala-148287b", class="btn btn-default col-md-6 col-md-offset-3">Join me on LinkedIn</a>
-      </p>
-      <br>
+      </div> -->
     </div>
   </div>
 </div>

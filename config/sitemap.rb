@@ -17,9 +17,16 @@ SitemapGenerator::Sitemap.create do
   #
   # Add '/articles'
   #
-    add welcome_about_path, :priority => 0.8, :changefreq => 'yearly'
-    add welcome_index_path, :priority => 0.9, :changefreq => 'yearly'
-    add designs_path, :priority => 0.9, :changefreq => 'yearly'
+  %w(google bing apple).each do |subdomain|
+    SitemapGenerator::Sitemap.default_host = "https://#{subdomain}.hrsimple.com"
+    SitemapGenerator::Sitemap.sitemaps_path = "sitemaps/#{subdomain}"
+    SitemapGenerator::Sitemap.create do
+      add '/'
+      add welcome_about_path, :priority => 0.8, :changefreq => 'yearly'
+      add welcome_index_path, :priority => 0.9, :changefreq => 'yearly'
+      add designs_path, :priority => 0.9, :changefreq => 'yearly'
+    end
+  end
 
 
   #
