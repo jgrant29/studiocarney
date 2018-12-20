@@ -3,3 +3,10 @@
 # To ban all spiders from the entire site uncomment the next two lines:
 # User-agent: *
 # Disallow: /
+
+Disallow: desingers/
+Disallow: design_image_attachments/
+Disallow: justins/
+Disallow: /desingers/
+Disallow: /design_image_attachments/
+Disallow: /justins/

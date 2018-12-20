@@ -54,7 +54,7 @@
   color: #fff;
 }
 .modal.modal-fullscreen .modal-footer {
-  border-color: rgba(0, 0, 0, .5);
+  border-top: none !important;
 }
 #myModal .carousel-caption {
   background-color: rgba(0, 0, 0, .5);
@@ -120,11 +120,6 @@
 }
 #myModal5 .item.active >.carousel-caption {
   bottom: 0;
-}
-
-
-.carousel.carousel-fit.slide {
-  margin-top: 10% !important;
 }
 
 .fixme {
@@ -245,7 +240,6 @@
 }
 
 .translating-front-text {
-  padding-right: 55px;
   margin-bottom: 10rem;
   bottom: 0;
   font-family: 'P22FLLWTerracotta';

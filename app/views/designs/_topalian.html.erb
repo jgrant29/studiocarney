@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="myCarousel8" class="hidden carousel slide carousel-fit" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag("C44A4176-HDR.jpg", {class: "slide active"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4182-HDR.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4191-HDR.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4218-HDR.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4221-HDR.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4236-HDR.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4254-HDR.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4266-HDR.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4285.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4286.jpg", {class: "slide"}) %>
+          </div>
+          <div class="item">
+            <%= image_tag("C44A4297.jpg", {class: "slide"}) %>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel8" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel8" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        </div>
+
+        <div class="modal fade modal-fullscreen force-fullscreen" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModal8Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" style="color: #FFFFFF" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div>
+  </div>
+
+</div>
+
+<script>
+$(window).load(function(){
+  $(".showme8").click(function(){
+    $('#myCarousel8').removeClass('hidden');
+  });
+  $(".close").click(function(){
+    $('#myCarousel8').addClass('hidden')
+  });
+  $(".btn-danger").click(function(){
+    $('#myCarousel8').addClass('hidden')
+  });
+});
+</script>

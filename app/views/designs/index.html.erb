@@ -1,6 +1,6 @@
 <% @title = "Studio Carney Architecture | Portfolio" %>
-<meta name="description" content="<%= @seo_description = "Our recent architecture throughout Chicago area" %>">
-<meta name="keywords" content="<%= @seo_keyword = "Architect Palatine Illinois Portfolio, Architect Chicago Illinois Portfolio, Architect in Wisconsin Portfolio, Architect in Missouri Portfolio, Architect in Barrington Illinois Portfolio" %>">
+<% @seo_description = "Studio Carney architecture and design portfolio, pictures, layouts, and gallery." %>
+<% @seo_keyword = "Studio Carney, Michael Carney, Architect in Palatine Illinois, Architect in Chicago Illinois Portfolio, Architect in Wisconsin Portfolio, Architect in Missouri Portfolio, Architect in Barrington Illinois Portfolio" %>
 
 <div class="container-fluid body-design">
   <div class="row">
@@ -13,14 +13,81 @@
     <div class="row">
       <div class="col-xs-12">
         <h1 class="text-muted">Portfolio</h1>
-        <p class="lead hidden-xs">Studio Carney Architecture, Inc. provides our clients with expert technical and creative solutions to their design challenges. Our firm is based on the principal that each project is as important to us as it is our client. Our goal is to take your vision and apply our imagination and technical experience to help translate that into a built environment. We believe each project should be a collaborative effort and work to include the Client in the design process. At the end of the project, the client was as much vested in the creation of the space as we were.</p>
       </div>
     </div>
-    <br>
-    <br>
-    <hr>
   </div>
   <div class="container-fluid">
+    <div class="row">
+      <div class="design-image">
+        <div class="col-md-6 hidden-xs">
+          <div data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+            <%= image_tag("C44A4176-HDR.jpg", {class: "showme8"}) %>
+          </div>
+        </div>
+        <div class="col-md-6 design-title">
+          <h1 class="text-muted">Remodel of an existing single family home in a Chicago suburb</h1>
+          <p class="lead hidden-xs">“A huge thanks to Michael for his help in creating our dream kitchen! He was so incredibly patient with us while we worked through a number of different ideas. This was our first remodeling project and we were clueless on where to start. Our home is older and the project had a lot of considerations. It required taking down walls, repositioning entry points, altering window sizes, moving gas lines, new electrical and a number of unforeseen city requirements. Michael helped us break the process down and creatively work through our options. We are absolutely thrilled with the result and grateful to Michael for helping our vision come to life!<br>Thank you for everything!!  We hope to be able to use you again in the future!”</p>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4176-HDR.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4182-HDR.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4191-HDR.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4218-HDR.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4221-HDR.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4236-HDR.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4254-HDR.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4266-HDR.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4285.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4286.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="design-thumbnail" data-toggle="modal" data-target="#myModal8" data-local="#myCarousel8">
+                <%= image_tag("C44A4297.jpg", {class: "showme8"}) %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
     <div class="row">
       <div class="design-image">
         <div class="col-md-6 hidden-xs">
@@ -381,6 +448,9 @@
 <%= render partial: "two_story_sing_family_home" %>
 <%= render partial: "master_bathroom_walk_in_closet" %>
 <%= render partial: "single_family_home_addition" %>
+<%= render partial: "topalian" %>
+
+
 
 
 
